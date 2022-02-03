@@ -7,13 +7,14 @@ import {
   Route,
   Link
 } from "react-router-dom";
+import Home from './pages/Home/Home';
 
 function App() {
   return (
     <div className="">
       <Router>
         <Header></Header>
-
+        <Home></Home>
 
       </Router>
 

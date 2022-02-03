@@ -12,7 +12,7 @@ const Header = () => {
 
                     <Link to="/" class="border-b-2 border-transparent hover:text-gray-800 dark:hover:text-gray-200 hover:border-blue-500 mx-1.5 sm:mx-6">Packages</Link>
 
-                    <Link to="/" class="lg:visible lg:text-3xl font-bold text-yellow-400 dark:hover:text-gray-200 hover:border-blue-500 mx-1.5 sm:mx-6">WATERLOO</Link>
+                    <Link to="/" class="lg:visible lg:text-5xl font-bold text-yellow-400 dark:hover:text-gray-200 hover:border-blue-500 mx-1.5 sm:mx-6">WATERLOO</Link>
 
 
 
