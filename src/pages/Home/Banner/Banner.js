@@ -1,6 +1,6 @@
 import React from 'react';
 import './Banner.css'
-import bgimage from '../../../img/banner2.jpg'
+import bgimage from '../../../img/banner3.jpg'
 
 
 
@@ -8,18 +8,21 @@ const Banner = () => {
     return (
         <div
 
-            className='paralax img-fluid'>
-            <section
-                style={{
-                    backgroundImage: 'url(' + bgimage + ')',
-                    backgroundSize: "cover",
-                    height: "100vh",
-                    width: "100vw",
+            style={{
+                backgroundImage: 'url(' + bgimage + ')',
+                backgroundSize: "cover",
+                height: "90vh",
+                width: "100vw",
 
-                }}
-                class="showcase">
+
+            }}
+            class="showcase"
+        >
+            <section
+
+            >
                 <header>
-                    <h2 class="logo">Fun Park</h2>
+                    <h2 class="logo text-2xl font-bold">WELCOME TO WATERLOO</h2>
 
                 </header>
                 <div
@@ -44,7 +47,7 @@ const Banner = () => {
                 </ul>
             </section>
 
-        </div>
+        </div >
     );
 };
 
