@@ -15,11 +15,11 @@ const Attractions = () => {
                     <div class="lg:flex items-stretch md:mt-12 mt-8">
                         <div class="lg:w-full">
                             <div class="sm:flex items-center justify-between xl:gap-x-8 gap-x-6">
-                                <div class="sm:w-1/2 relative">
-                                    <div>
+                                <div class="sm:w-1/2 w-60 relative">
+                                    <div className=''>
 
-                                        <div class="absolute bottom-0 left-0 p-6 bg-blue-400 ">
-                                            <div>
+                                        <div class="absolute bottom-0 left-0 p-6 bg-blue-400 bg-blend-lighten ">
+                                            <div className=''>
                                                 <h2 class="text-xl font-semibold 5 text-white">Best Pools</h2>
                                                 <p class="text-base leading-4 text-white mt-2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam, voluptate?</p>
                                                 <a href="/" class="focus:outline-none focus:underline flex items-center mt-4 cursor-pointer text-white hover:text-gray-200 hover:underline">

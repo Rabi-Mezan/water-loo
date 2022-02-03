@@ -15,7 +15,7 @@ const Speciality = () => {
                 </div>
             </div>
 
-            <div class="grid lg:grid-cols-2 gap-6 lg:ml-20 justify-center items-start">
+            <div class="grid lg:grid-cols-2 gap-6 lg:ml-10 justify-center items-start">
                 <div>
                     <div class="grid lg:grid-cols-2 gap-3 justify-center">
 
@@ -46,18 +46,18 @@ const Speciality = () => {
                             <h3 className='font-bold text-2xl my-3'>Pool Rides</h3>
                             <p className=' mx-auto text-sm'>Lorem ipsum dolor sit amet, consectetur adipisicing </p>
                         </div>
-                        <h1 class="text-4xl mt-28 mb-4 font-bold leading-9 text-left text-black uppercase">Our Schedule</h1>
-                        <div className='py-10 col-span-2 px-4  bg-gray-200 items-bottom'>
+                        <h1 class="text-4xl mt-8 mb-4 font-bold leading-9 text-left text-black uppercase">Our Schedule</h1>
+                        <div className='py-14 col-span-2 px-4  bg-blue-500 items-bottom'>
                             <div className='text-xl'>
-                                <p className='flex justify-between '>Monday - Friday <span className='font-semibold'><i class="fas fa-clock mr-2 text-blue-500"></i>08:00 AM - 16:00 PM</span></p>
+                                <p className='flex justify-between '>Monday - Friday <span className='font-semibold'><i class="fas fa-clock mr-2 text-white"></i>08:00 AM - 16:00 PM</span></p>
+                            </div>
+                            <hr className='my-3 ' />
+                            <div className='text-xl'>
+                                <p className='flex justify-between '>Saturday - Sunday <span className='font-semibold'><i class="fas fa-clock mr-2 text-white"></i>09:00 AM - 17:00 PM</span></p>
                             </div>
                             <hr className='my-3' />
                             <div className='text-xl'>
-                                <p className='flex justify-between '>Saturday - Sunday <span className='font-semibold'><i class="fas fa-clock mr-2 text-blue-500"></i>09:00 AM - 17:00 PM</span></p>
-                            </div>
-                            <hr className='my-3' />
-                            <div className='text-xl'>
-                                <p className='flex justify-between '>Holiday <span className='font-semibold'><i class="fas fa-clock mr-2 text-blue-500"></i>09:00 AM - 17:00 PM
+                                <p className='flex justify-between '>Holiday <span className='font-semibold'><i class="fas fa-clock mr-2 text-white"></i>09:00 AM - 17:00 PM
                                 </span></p>
                             </div>
                             <hr className='my-3' />

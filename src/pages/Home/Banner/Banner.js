@@ -11,18 +11,18 @@ const Banner = () => {
             style={{
                 backgroundImage: 'url(' + bgimage + ')',
                 backgroundSize: "cover",
-                height: "90vh",
+                height: "100vh",
                 width: "100vw",
 
 
             }}
-            class="showcase"
+            class="showcase "
         >
             <section
-
+                className=''
             >
                 <header>
-                    <h2 class="logo text-2xl font-bold">WELCOME TO WATERLOO</h2>
+                    <h2 class="logo pt-8  text-2xl font-bold">WELCOME TO WATERLOO</h2>
 
                 </header>
                 <div
