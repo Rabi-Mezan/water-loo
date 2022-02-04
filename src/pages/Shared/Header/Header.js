@@ -1,7 +1,10 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import useFirebase from '../../../hooks/usefirebase';
 
 const Header = () => {
+    const { user, logout } = useFirebase()
+
     return (
         <div className=''>
             <nav class="bg-white shadow dark:bg-gray-800 ">
@@ -16,12 +19,22 @@ const Header = () => {
 
 
 
-                    <Link to="/login" class="border-b-2 border-transparent hover:text-gray-800 dark:hover:text-gray-200 hover:border-blue-500 mx-1.5 sm:mx-6">
-                        Login
-                    </Link>
-                    <Link to="/register" class="border-b-2 border-transparent hover:text-gray-800 dark:hover:text-gray-200 hover:border-blue-500 mx-1.5 sm:mx-6">
-                        Register
-                    </Link>
+                    {
+                        user.email ?
+                            <div class="border-b-2 border-transparent hover:text-gray-800 dark:hover:text-gray-200 mx-1.5 sm:mx-6">
+                                {user.displayName}    <button onClick={logout} className='bg-gray-400 text-black px-4 py-1 font-bold rounded-lg ml-5'>Logout</button>
+                            </div>
+                            :
+
+                            <div>
+                                <Link to="/login" class="border-b-2 border-transparent hover:text-gray-800 dark:hover:text-gray-200 hover:border-blue-500 mx-1.5 sm:mx-6">
+                                    Login
+                                </Link>
+                                <Link to="/register" class="border-b-2 border-transparent hover:text-gray-800 dark:hover:text-gray-200 hover:border-blue-500 mx-1.5 sm:mx-6">
+                                    Register
+                                </Link>
+                            </div>
+                    }
                 </div>
             </nav>
 

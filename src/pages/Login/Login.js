@@ -2,10 +2,12 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 
 const Login = () => {
+
+
     return (
         <div>
-            <div class="p-12 my-20">
-                <div class="flex bg-white rounded-lg shadow-lg overflow-hidden mx-auto max-w-sm lg:max-w-full">
+            <div class="px-12 h-screen content-center my-20">
+                <div class="flex bg-white rounded-lg  overflow-hidden mx-auto max-w-sm lg:max-w-full">
                     <div class="hidden lg:block lg:w-1/2 bg-cover" style={{ backgroundImage: "url('https://images.unsplash.com/photo-1460788150444-d9dc07fa9dba?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1yZWxhdGVkfDE4fHx8ZW58MHx8fHw%3D&auto=format&fit=crop&w=600&q=60')" }}></div>
                     <div class="w-full p-8 lg:w-1/2">
 
