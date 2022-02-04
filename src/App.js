@@ -11,6 +11,7 @@ import Packages from './pages/Packages/Packages';
 import Footer from './pages/Shared/Footer/Footer';
 import Login from './pages/Login/Login';
 import Register from './pages/Register/Register';
+import Details from './pages/Details/Details';
 
 function App() {
   return (
@@ -29,6 +30,9 @@ function App() {
           </Route>
           <Route path='/register'>
             <Register></Register>
+          </Route>
+          <Route path='/details/:packid'>
+            <Details></Details>
           </Route>
         </Switch>
         <Footer></Footer>

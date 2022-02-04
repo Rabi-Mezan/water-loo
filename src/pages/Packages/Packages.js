@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import Slider from 'react-animated-slider';
 import 'react-animated-slider/build/horizontal.css';
+import { Link } from 'react-router-dom';
 import './Packages.css'
 
 
@@ -11,7 +12,7 @@ const Packages = () => {
 
 
     useEffect(() => {
-        fetch('http://localhost:5000/packages')
+        fetch('https://arcane-anchorage-85397.herokuapp.com/packages')
             .then(res => res.json())
             .then(data => setPackages(data))
     }, [])
@@ -73,10 +74,10 @@ const Packages = () => {
                                             <path d="M12 17.27L18.18 21L16.54 13.97L22 9.24L14.81 8.63L12 2L9.19 8.63L2 9.24L7.46 13.97L5.82 21L12 17.27Z" />
                                         </svg>
                                     </div>
-                                    <div class="flex item-center justify-between mt-3">
+                                    <Link to={`/details/${pack._id}`} class="flex item-center justify-between mt-3">
                                         <h1 class="text-gray-700 font-bold text-xl">£{pack.fair}/PP</h1>
-                                        <button class="px-3 w-2/3 h-10 py-2 bg-gray-800 text-white text-xs font-bold uppercase rounded">Buy Ticket</button>
-                                    </div>
+                                        <button class="px-3 w-2/3 h-10 py-2 bg-gray-800 opacity-50 hover:opacity-90 hover:scale-110 text-white text-xs font-bold uppercase rounded">See Details</button>
+                                    </Link>
                                 </div>
                             </div>
                         </div>

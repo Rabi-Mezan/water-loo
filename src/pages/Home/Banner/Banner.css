@@ -25,7 +25,7 @@ header .logo
   cursor: pointer;
 }
 
-.showcase
+.banner
 {
   position: relative;
   left: 0;
@@ -128,8 +128,8 @@ header .logo
 
 @media (max-width: 991px)
 {
-  .showcase,
-  .showcase header
+  .banner,
+  .banner header
   {
     padding: 40px;
   }

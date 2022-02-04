@@ -1,11 +1,13 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 const Footer = () => {
     return (
         <div>
-            <div className='lg:h-96 lg:flex flex-col items-center justify-center  dark:bg-gray-800 lg:mt-28 lg:pt-20'>
-                <div className='grid lg:justify-items-end lg:grid-cols-4  grid-cols-2 gap-16'>
-                    <div className='text-right lg:border-r-2 pr-4 leading-7'>
+            <div className='lg:h-96 lg:flex flex-col items-strech  justify-center  dark:bg-gray-800 lg:mt-28 lg:pt-20'>
+                <Link to="/" class="lg:visible lg:text-4xl font-bold text-yellow-400 dark:hover:text-gray-200 hover:border-blue-500 my-5 ml-14">WATERLOO</Link>
+                <div className='grid lg:justify-items-start lg:grid-cols-4  grid-cols-2 gap-5 px-16'>
+                    <div className='text-left  pr-4 leading-7'>
                         <h5 className='uppercase text-white font-semibold mb-4'>Links</h5>
                         <p className='text-gray-200'>Gallery</p>
                         <p className='text-gray-200'>Pricing</p>
@@ -20,13 +22,13 @@ const Footer = () => {
                         <p className='text-gray-200'>Newsletter</p>
                         <p className='text-gray-200'>Our Events</p>
                     </div>
-                    <div className='text-left  border-l-2 pl-4 leading-7'>
+                    <div className='text-left   pl-4 leading-7'>
                         <h5 className='uppercase text-white font-semibold mb-4'>SERVICES</h5>
                         <p className='text-gray-200'>Services</p>
                         <p className='text-gray-200'>Newsletter</p>
                         <p className='text-gray-200'>Our Events</p>
                     </div>
-                    <div className='text-left  border-l-2 pl-4 leading-7'>
+                    <div className='text-left   pl-4 leading-7'>
                         <h5 className='uppercase text-white font-semibold mb-4'>RESOURCES</h5>
                         <p className='text-gray-200'>Services</p>
                         <p className='text-gray-200'>Newsletter</p>

@@ -1,6 +1,7 @@
 import React from 'react';
 import './Banner.css'
 import bgimage from '../../../img/banner3.jpg'
+import { Link } from 'react-router-dom';
 
 
 
@@ -16,7 +17,7 @@ const Banner = () => {
 
 
             }}
-            class="showcase "
+            class="banner"
         >
             <section
                 className=''
@@ -27,7 +28,7 @@ const Banner = () => {
                 </header>
                 <div
 
-                    className='paralax img-fluid'></div>
+                    className=' img-fluid'></div>
                 <div class="overlay"></div>
                 <div class="text">
                     <h2>Never Stop To </h2>
@@ -35,15 +36,15 @@ const Banner = () => {
                     <p>100% Authentic Tickets. Dedicated Customer Support. e-Ticket Delivery. Children's Charities Sponsor.
 
                         A Trusted Seller of Discounted Attraction Tickets & Vacation Packages.</p>
-                    <a href="/">Explore</a>
+                    <Link to="/packages">Explore</Link>
                 </div>
                 <ul class="social">
                     <li><a href="/">
-                        <img src="https://i.ibb.co/x7P24fL/facebook.png" /></a></li>
+                        <img src="https://i.ibb.co/x7P24fL/facebook.png" alt='' /></a></li>
                     <li><a href="/">
-                        <img src="https://i.ibb.co/Wnxq2Nq/twitter.png" /></a></li>
+                        <img src="https://i.ibb.co/Wnxq2Nq/twitter.png" alt='' /></a></li>
                     <li><a href="/">
-                        <img src="https://i.ibb.co/ySwtH4B/instagram.png" /></a></li>
+                        <img src="https://i.ibb.co/ySwtH4B/instagram.png" alt='' /></a></li>
                 </ul>
             </section>
 
