@@ -1,7 +1,25 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
+import useFirebase from '../../hooks/usefirebase';
 
 const Login = () => {
+
+    const [logindata, setLogindata] = useState()
+    const { user, login } = useFirebase()
+    const { googleSignIn } = useFirebase()
+
+    const hanldeOnblur = (e) => {
+        const field = e.target.name;
+        const value = e.target.value;
+        const newlogindata = { ...logindata };
+        newlogindata[field] = value;
+        setLogindata(newlogindata)
+    }
+
+    const handleLogin = (e) => {
+        login(logindata.email, logindata.password)
+        e.preventDefault();
+    }
 
 
     return (
@@ -12,7 +30,7 @@ const Login = () => {
                     <div class="w-full p-8 lg:w-1/2">
 
                         <p class="lg:visible lg:text-4xl font-bold text-yellow-400 dark:hover:text-gray-200 hover:border-blue-500 mx-1.5 sm:mx-6 text-center">WATERLOO</p>
-                        <a href="/" class="flex items-center justify-center mt-4 text-white rounded-lg shadow-md hover:bg-gray-100">
+                        <button onClick={googleSignIn} class="flex w-full items-center justify-center mt-4 text-white rounded-lg shadow-md hover:bg-gray-100">
                             <div class="px-4 py-3">
                                 <svg class="h-6 w-6" viewBox="0 0 40 40">
                                     <path d="M36.3425 16.7358H35V16.6667H20V23.3333H29.4192C28.045 27.2142 24.3525 30 20 30C14.4775 30 10 25.5225 10 20C10 14.4775 14.4775 9.99999 20 9.99999C22.5492 9.99999 24.8683 10.9617 26.6342 12.5325L31.3483 7.81833C28.3717 5.04416 24.39 3.33333 20 3.33333C10.7958 3.33333 3.33335 10.7958 3.33335 20C3.33335 29.2042 10.7958 36.6667 20 36.6667C29.2042 36.6667 36.6667 29.2042 36.6667 20C36.6667 18.8825 36.5517 17.7917 36.3425 16.7358Z" fill="/FFC107" />
@@ -22,25 +40,39 @@ const Login = () => {
                                 </svg>
                             </div>
                             <h1 class="px-4 py-3 w-5/6 text-center text-gray-600 font-bold">Sign in with Google</h1>
-                        </a>
+                        </button>
                         <div class="mt-4 flex items-center justify-between">
                             <span class="border-b w-1/5 lg:w-1/4"></span>
                             <a href="/" class="text-xs text-center text-gray-500 uppercase">or login with email</a>
                             <span class="border-b w-1/5 lg:w-1/4"></span>
                         </div>
-                        <div class="mt-4">
-                            <label class="block text-gray-700 text-sm font-bold mb-2">Email Address</label>
-                            <input class="bg-gray-200 text-gray-700 focus:outline-none focus:shadow-outline border border-gray-300 rounded py-2 px-4 block w-full appearance-none" type="email" />
-                        </div>
-                        <div class="mt-4">
-                            <div class="flex justify-between">
-                                <label class="block text-gray-700 text-sm font-bold mb-2">Password</label>
-                                <a href="/" class="text-xs text-gray-500">Forget Password?</a>
-                            </div>
-                            <input class="bg-gray-200 text-gray-700 focus:outline-none focus:shadow-outline border border-gray-300 rounded py-2 px-4 block w-full appearance-none" type="password" />
-                        </div>
-                        <div class="mt-8">
-                            <button class="bg-gray-700 text-white font-bold py-2 px-4 w-full rounded hover:bg-gray-600">Login</button>
+                        <div>
+                            <form onSubmit={handleLogin}>
+                                <div class="mt-4">
+                                    <label class="block text-gray-700 text-sm font-bold mb-2">Email Address</label>
+                                    <input
+                                        name='email'
+                                        type="email"
+                                        required
+                                        onBlur={hanldeOnblur}
+                                        class="bg-gray-200 text-gray-700 focus:outline-none focus:shadow-outline border border-gray-300 rounded py-2 px-4 block w-full appearance-none" />
+                                </div>
+                                <div class="mt-4">
+                                    <div class="flex justify-between">
+                                        <label class="block text-gray-700 text-sm font-bold mb-2">Password</label>
+                                        <a href="/" class="text-xs text-gray-500">Forget Password?</a>
+                                    </div>
+                                    <input
+                                        name='password'
+                                        type="password"
+                                        required
+                                        onBlur={hanldeOnblur}
+                                        class="bg-gray-200 text-gray-700 focus:outline-none focus:shadow-outline border border-gray-300 rounded py-2 px-4 block w-full appearance-none" />
+                                </div>
+                                <div class="mt-8">
+                                    <button class="bg-gray-700 text-white font-bold py-2 px-4 w-full rounded hover:bg-gray-600">Login</button>
+                                </div>
+                            </form>
                         </div>
                         <div class="mt-4 flex items-center justify-between">
                             <span class="border-b w-1/5 md:w-1/4"></span>

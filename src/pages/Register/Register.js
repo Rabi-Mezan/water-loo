@@ -1,16 +1,29 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import useFirebase from '../../hooks/usefirebase';
 
 
 
 const Register = () => {
+    const [regdata, setRegdata] = useState()
+    const { user, registerUser, googleSignIn } = useFirebase()
 
-    const { googleSignIn } = useFirebase()
+    const hanldeOnblur = (e) => {
+        const field = e.target.name;
+        const value = e.target.value;
+        const newRegdata = { ...regdata };
+        newRegdata[field] = value;
+        setRegdata(newRegdata)
+    }
+
+    const handlregister = (e) => {
+        registerUser(regdata.name, regdata.email, regdata.password)
+        e.preventDefault();
+    }
 
     return (
         <div>
-            <div class="px-12 my-20 h-screen">
+            <div class="px-12 my-20 lg:h-screen">
                 <div class="flex bg-white rounded-lg  overflow-hidden mx-auto max-w-sm lg:max-w-full">
                     <div class="hidden lg:block lg:w-1/2 bg-cover" style={{ backgroundImage: "url('https://images.unsplash.com/photo-1521851562770-de70f34424b7?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1yZWxhdGVkfDE5fHx8ZW58MHx8fHw%3D&auto=format&fit=crop&w=600&q=60')" }}></div>
                     <div class="w-full p-8 lg:w-1/2">
@@ -34,24 +47,43 @@ const Register = () => {
                             <a href="/" class="text-xs text-center text-gray-500 uppercase">or login with email</a>
                             <span class="border-b w-1/5 lg:w-1/4"></span>
                         </div>
-                        <div class="mt-4">
-                            <label class="block text-gray-700 text-sm font-bold mb-2">Name</label>
-                            <input class="bg-gray-200 text-gray-700 focus:outline-none focus:shadow-outline border border-gray-300 rounded py-2 px-4 block w-full appearance-none" type="email" />
-                        </div>
-                        <div class="mt-4">
-                            <label class="block text-gray-700 text-sm font-bold mb-2">Email Address</label>
-                            <input class="bg-gray-200 text-gray-700 focus:outline-none focus:shadow-outline border border-gray-300 rounded py-2 px-4 block w-full appearance-none" type="email" />
-                        </div>
-                        <div class="mt-4">
-                            <div class="flex justify-between">
-                                <label class="block text-gray-700 text-sm font-bold mb-2">Password</label>
-                                <a href="/" class="text-xs text-gray-500">Forget Password?</a>
+                        <form onSubmit={handlregister}>
+
+                            <div class="mt-4">
+                                <label class="block text-gray-700 text-sm font-bold mb-2">Name</label>
+                                <input
+                                    type="text"
+                                    name="name"
+                                    required
+                                    onBlur={hanldeOnblur}
+                                    class="bg-gray-200 text-gray-700 focus:outline-none focus:shadow-outline border border-gray-300 rounded py-2 px-4 block w-full appearance-none" />
                             </div>
-                            <input class="bg-gray-200 text-gray-700 focus:outline-none focus:shadow-outline border border-gray-300 rounded py-2 px-4 block w-full appearance-none" type="password" />
-                        </div>
-                        <div class="mt-8">
-                            <button class="bg-gray-700 text-white font-bold py-2 px-4 w-full rounded hover:bg-gray-600">Register</button>
-                        </div>
+                            <div class="mt-4">
+                                <label class="block text-gray-700 text-sm font-bold mb-2">Email Address</label>
+                                <input
+                                    type="email"
+                                    name="email"
+                                    required
+                                    onBlur={hanldeOnblur}
+                                    class="bg-gray-200 text-gray-700 focus:outline-none focus:shadow-outline border border-gray-300 rounded py-2 px-4 block w-full appearance-none" />
+                            </div>
+                            <div class="mt-4">
+                                <div class="flex justify-between">
+                                    <label class="block text-gray-700 text-sm font-bold mb-2">Password</label>
+                                    <a href="/" class="text-xs text-gray-500">Forget Password?</a>
+                                </div>
+                                <input
+                                    type="password"
+                                    name="password"
+                                    required
+                                    onBlur={hanldeOnblur}
+                                    class="bg-gray-200 text-gray-700 focus:outline-none focus:shadow-outline border border-gray-300 rounded py-2 px-4 block w-full appearance-none" />
+                            </div>
+                            <div class="mt-8">
+                                <button class="bg-gray-700 text-white font-bold py-2 px-4 w-full rounded hover:bg-gray-600">Register</button>
+                            </div>
+
+                        </form>
                         <div class="mt-4 flex items-center justify-between">
                             <span class="border-b w-1/5 md:w-1/4"></span>
                             <Link to="/login" class="text-xs text-gray-500 uppercase">Already Registered ? <span className='text-blue-500 font-bold'>Login Here</span></Link>

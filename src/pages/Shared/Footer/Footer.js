@@ -3,9 +3,9 @@ import React from 'react';
 const Footer = () => {
     return (
         <div>
-            <div className='h-96 flex flex-col items-center justify-center  dark:bg-gray-800 mt-28 pt-20'>
-                <div className='grid justify-items-end grid-cols-4 gap-16'>
-                    <div className='text-right border-r-2 pr-4 leading-7'>
+            <div className='lg:h-96 lg:flex flex-col items-center justify-center  dark:bg-gray-800 lg:mt-28 lg:pt-20'>
+                <div className='grid lg:justify-items-end lg:grid-cols-4  grid-cols-2 gap-16'>
+                    <div className='text-right lg:border-r-2 pr-4 leading-7'>
                         <h5 className='uppercase text-white font-semibold mb-4'>Links</h5>
                         <p className='text-gray-200'>Gallery</p>
                         <p className='text-gray-200'>Pricing</p>
