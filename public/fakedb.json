@@ -1,0 +1,44 @@
+[
+    {
+        "id": 1,
+        "title": "Loo Ferris wheel",
+        "description": "This is one of the best rides that provide a million romantic moments and breath taking views. Designed by an engineer from Colombia in 1983. It involves passenger cars attached around the outer edge of a rotating wheel. It displaces you vertically and horizontally from a fixed pivot.",
+        "img": "https://i.ibb.co/S3KYrV8/ethan-hoover-zy-U2g-Q9m-WLM-unsplash.jpg",
+        "fair": 50
+    },
+    {
+        "id": 2,
+        "title": "Loo Ballon Rides",
+        "description": "This ride was completed back in the year 1926 by a grate designer called Herbert Sellner. This configuration involved seven cars pivoted on fixed points on a rotating platform that raised and lowered itself. The cars are launched into a free spinning and gains centrifugal force. The effects of the gravitational force would create wild spins in a different direction creating a thrilling sensation on the rider.",
+        "img": "https://i.ibb.co/vBV3ytG/tyler-nix-kxvo-c2-Ghw-Q-unsplash.jpg",
+        "fair": 100
+    },
+    {
+        "id": 3,
+        "title": "Loo Haunted Mansion",
+        "description": "It has several names, in America it is called the Scrambler. This ride involves fast and breath taking speeds. It has three arms, each arm is clustered with several cars, and relative to the size the cars are smaller on its own. When started, scrambling commences and the main arm and the little arms all begin to rotate. The acceleration between the outer and the inner arms are varied. With these movements, a frightening illusion is created. You will observe a close collision of the cars and their passengers. It is a very scary experience.",
+        "img": "https://i.ibb.co/tHWDtqG/priscilla-du-preez-FOsina4f7q-M-unsplash.jpg",
+        "fair": 50
+    },
+    {
+        "id": 4,
+        "title": "Bumper cars",
+        "description": "It recreates the fun and thrill associated with the fender bender. It was introduced in the 1920s. They are attributed to large rings with a pen and graphite floor meant to decrease friction. The riders drive the small electric cars that obtain power from the overhead grid towards the other cars in the pen to achieve a crash. They land on rubber bumpers with or without breaks you are assured that you are safe",
+        "img": "https://i.ibb.co/k8mymvB/david-trana-mmdchg5-UPt-Q-unsplash.jpg",
+        "fair": 70
+    },
+    {
+        "id": 5,
+        "title": "Loo Disney Land",
+        "description": "It has several names, in America it is called the Scrambler. This ride involves fast and breath taking speeds. It has three arms, each arm is clustered with several cars, and relative to the size the cars are smaller on its own. When started, scrambling commences and the main arm and the little arms all begin to rotate. The acceleration between the outer and the inner arms are varied. With these movements, a frightening illusion is created. You will observe a close collision of the cars and their passengers. It is a very scary experience.",
+        "img": "https://i.ibb.co/DVftGKx/yulissa-tagle-P-Sw-HEKa-BMg-unsplash.jpg",
+        "fair": 150
+    },
+    {
+        "id": 6,
+        "title": "Loo Night Cafe",
+        "description": "It has several names, in America it is called the Scrambler. This ride involves fast and breath taking speeds. It has three arms, each arm is clustered with several cars, and relative to the size the cars are smaller on its own. When started, scrambling commences and the main arm and the little arms all begin to rotate. The acceleration between the outer and the inner arms are varied. With these movements, a frightening illusion is created. You will observe a close collision of the cars and their passengers. It is a very scary experience.",
+        "img": "https://i.ibb.co/JyJqyg6/rod-long-Y0-DCYv-Myn-V8-unsplash-1.jpg",
+        "fair": 50
+    }
+]
