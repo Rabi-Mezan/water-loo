@@ -1,5 +1,6 @@
 # Getting Started with Create React App
-
+#admin kamal@gmail.com
+#admin pass : 123456
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
