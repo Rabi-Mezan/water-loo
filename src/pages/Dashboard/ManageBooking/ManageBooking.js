@@ -5,7 +5,7 @@ const ManageBooking = () => {
     const [control, setControl] = useState(false)
 
     useEffect(() => {
-        fetch('http://localhost:5000/booking')
+        fetch('https://arcane-anchorage-85397.herokuapp.com/booking')
             .then(res => res.json())
             .then(data => {
                 setAllbooing(data)
@@ -17,7 +17,7 @@ const ManageBooking = () => {
     const handleCancel = id => {
         const procedd = window.confirm('Are you sure to cancel the order??')
         if (procedd) {
-            fetch(`http://localhost:5000/mybooking/${id}`, {
+            fetch(`https://arcane-anchorage-85397.herokuapp.com/mybooking/${id}`, {
                 method: 'DELETE',
                 headers: {
                     "content-type": "application/json"
@@ -41,7 +41,7 @@ const ManageBooking = () => {
 
     //approved ticket booking by admin 
     const handleUpdate = id => {
-        fetch(`http://localhost:5000/booking/${id}`, {
+        fetch(`https://arcane-anchorage-85397.herokuapp.com/booking/${id}`, {
             method: "PUT",
             headers: {
                 "content-type": "application/json"

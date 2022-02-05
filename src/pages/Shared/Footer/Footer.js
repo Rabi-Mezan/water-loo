@@ -2,6 +2,11 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 
 const Footer = () => {
+
+    let getYear = () => {
+        let currentYear = new Date().getFullYear();
+        return currentYear;
+    };
     return (
         <div>
             <div className='lg:h-96 lg:flex flex-col items-strech  justify-center  dark:bg-gray-800 lg:mt-28 lg:pt-20'>
@@ -44,7 +49,7 @@ const Footer = () => {
             </div>
             <div className='dark:bg-gray-800 text-center py-5'>
                 <hr />
-                <small className='text-yellow-500'>WATERLOO © Ravi//2022. ALL RIGHTS RESERVED.</small>
+                <small className='text-yellow-500'>WATERLOO © Ravi//{getYear()} . ALL RIGHTS RESERVED.</small>
             </div>
         </div>
     );

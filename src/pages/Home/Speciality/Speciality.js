@@ -15,7 +15,7 @@ const Speciality = () => {
                 </div>
             </div>
 
-            <div class="grid lg:grid-cols-2 gap-6 lg:ml-10 justify-center items-start">
+            <div class="grid lg:grid-cols-2 gap-6 px-2 justify-center items-start">
                 <div>
                     <div class="lg:grid lg:grid-cols-2 gap-3 justify-center">
 

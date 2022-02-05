@@ -33,7 +33,7 @@ const Featured = () => {
 
             </div>
             {
-                attractions.map(item =>
+                attractions.slice(0, 5).map(item =>
                     <div class="flex justify-start items-center  bg-blue-lightest">
                         <div id="app" class="bg-white w-3/4  mx-14 my-6 p-2 h-70 rounded  flex card text-grey-darkest">
                             <img class="w-80 h-full rounded-l-sm" src={item.img} alt="img" />

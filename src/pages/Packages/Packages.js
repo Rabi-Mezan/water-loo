@@ -44,7 +44,7 @@ const Packages = () => {
                 ))}
             </Slider>
 
-            <div className='grid grid-cols-2 mx-10 content-center gap-8 py-10'>
+            <div className='grid grid-cols-2 mx-4 content-center gap-8 py-10'>
                 {
                     packages.map(pack =>
 

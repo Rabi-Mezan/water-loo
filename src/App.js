@@ -16,6 +16,7 @@ import AuthProvider from './Context/AuthProvider/AuthProvider';
 import PrivateRoute from './pages/PrivateRoute/PrivateRoute';
 import BookTicket from './pages/BookTicket/BookTicket';
 import Dashboard from './pages/Dashboard/Dashboard';
+import NotFound from './pages/Notfound/NotFound';
 
 function App() {
   return (
@@ -24,6 +25,9 @@ function App() {
         <Router>
           <Header></Header>
           <Switch>
+            <Route exact path='/'>
+              <Home></Home>
+            </Route>
             <Route path='/home'>
               <Home></Home>
             </Route>
@@ -36,12 +40,15 @@ function App() {
             <Route path='/register'>
               <Register></Register>
             </Route>
-            <Route path='/details/:packid'>
+            <Route exact path='/details/:packid'>
               <Details></Details>
             </Route>
             <Route path='/dashboard'>
               <Dashboard></Dashboard>
             </Route>
+            {/* <Route exact path='*'>
+              <NotFound></NotFound>
+            </Route> */}
             <PrivateRoute path='/bookTicket/:id'>
               <BookTicket></BookTicket>
             </PrivateRoute>

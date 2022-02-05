@@ -15,7 +15,7 @@ const BookTicket = () => {
         data.pack = pack;
         data.status = 'pending'
         // console.log(data);
-        fetch('http://localhost:5000/bookticket', {
+        fetch('https://arcane-anchorage-85397.herokuapp.com/bookTicket', {
             method: "POST",
             headers: { "content-type": "application/json" },
             body: JSON.stringify(data)
@@ -24,6 +24,7 @@ const BookTicket = () => {
             .then(result => {
                 if (result.insertedId) {
                     alert('Booking successfull !!')
+                    reset()
                 }
             })
         reset()
@@ -32,7 +33,7 @@ const BookTicket = () => {
 
 
     useEffect(() => {
-        fetch(`http://localhost:5000/details/${id}`)
+        fetch(`https://arcane-anchorage-85397.herokuapp.com/details/${id}`)
             .then(res => res.json())
             .then(data => setPack(data))
     }, [])

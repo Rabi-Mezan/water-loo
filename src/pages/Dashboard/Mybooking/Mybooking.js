@@ -9,7 +9,7 @@ const Mybooking = () => {
     const history = useHistory()
 
     useEffect(() => {
-        fetch(`http://localhost:5000/mybooking/${user?.email}`)
+        fetch(`https://arcane-anchorage-85397.herokuapp.com/mybooking/${user?.email}`)
             .then(res => res.json())
             .then(result => {
                 console.log(result);
@@ -20,7 +20,7 @@ const Mybooking = () => {
     const handleCancel = id => {
         const procedd = window.confirm('Are you sure to cancel the order??')
         if (procedd) {
-            fetch(`http://localhost:5000/mybooking/${id}`, {
+            fetch(`https://arcane-anchorage-85397.herokuapp.com/mybooking/${id}`, {
                 method: 'DELETE',
                 headers: {
                     "content-type": "application/json"

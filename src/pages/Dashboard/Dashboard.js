@@ -14,6 +14,11 @@ const Dashboard = () => {
     const history = useHistory();
     const { logout, admin } = useAuth()
 
+    const handleLogout = () => {
+        logout();
+        history.push('/home')
+    }
+
     return (
         <div>
 
@@ -41,7 +46,7 @@ const Dashboard = () => {
                             </li>
 
                             <li>
-                                <button onClick={logout} to="/" class="flex flex-row items-center h-12 transform hover:translate-x-2 transition-transform ease-in duration-200 text-gray-500 hover:text-gray-800">
+                                <button onClick={handleLogout} to="/" class="flex flex-row items-center h-12 transform hover:translate-x-2 transition-transform ease-in duration-200 text-gray-500 hover:text-gray-800">
                                     <span class="inline-flex items-center justify-center h-12 w-12 text-lg text-gray-400"><i class="bx bx-log-out"></i></span>
                                     <span class="text-xl font-medium">Logout</span>
                                 </button>
@@ -63,7 +68,7 @@ const Dashboard = () => {
                                 </li>
 
                                 <li>
-                                    <button onClick={logout} to="/" class="flex flex-row items-center h-12 transform hover:translate-x-2 transition-transform ease-in duration-200 text-gray-500 hover:text-gray-800">
+                                    <button onClick={handleLogout} to="/" class="flex flex-row items-center h-12 transform hover:translate-x-2 transition-transform ease-in duration-200 text-gray-500 hover:text-gray-800">
                                         <span class="inline-flex items-center justify-center h-12 w-12 text-lg text-gray-400"><i class="bx bx-log-out"></i></span>
                                         <span class="text-xl font-medium">Logout</span>
                                     </button>
@@ -82,12 +87,6 @@ const Dashboard = () => {
                                     <Mybooking></Mybooking>
                             }
                         </Route>
-                        <AdminRoute path={`${path}/managebooking`}>
-                            <ManageBooking></ManageBooking>
-                        </AdminRoute>
-                        <AdminRoute path={`${path}/addpackages`}>
-                            <AddPackages></AddPackages>
-                        </AdminRoute>
 
                         <Route path={`${path}/mybooking`}>
                             <Mybooking></Mybooking>
@@ -95,6 +94,14 @@ const Dashboard = () => {
                         <Route path={`${path}/feedback`}>
                             <Feedback></Feedback>
                         </Route>
+                        <AdminRoute path={`${path}/managebooking`}>
+                            <ManageBooking></ManageBooking>
+                        </AdminRoute>
+                        <AdminRoute path={`${path}/addpackages`}>
+                            <AddPackages></AddPackages>
+                        </AdminRoute>
+
+
                     </Switch>
                 </div>
             </div>

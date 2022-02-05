@@ -7,7 +7,7 @@ const Details = () => {
     const [pack, setPack] = useState({})
 
     useEffect(() => {
-        fetch(`http://localhost:5000/details/${packid}`)
+        fetch(`https://arcane-anchorage-85397.herokuapp.com/details/${packid}`)
             .then(res => res.json())
             .then(data => setPack(data))
     }, [])
