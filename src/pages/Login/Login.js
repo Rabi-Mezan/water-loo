@@ -1,12 +1,18 @@
 import React, { useState } from 'react';
+import { useLocation } from 'react-router-dom';
+import { useHistory } from 'react-router-dom';
 import { Link } from 'react-router-dom';
 import useFirebase from '../../hooks/usefirebase';
 
 const Login = () => {
 
     const [logindata, setLogindata] = useState()
-    const { user, login } = useFirebase()
+    const { user, login, setIsLoading } = useFirebase()
+    const history = useHistory()
+    const location = useLocation()
     const { googleSignIn } = useFirebase()
+
+    const redirectUrl = location.state?.from || '/home'
 
     const hanldeOnblur = (e) => {
         const field = e.target.name;
@@ -16,8 +22,28 @@ const Login = () => {
         setLogindata(newlogindata)
     }
 
+
+    const hadleGoogleSignIn = () => {
+        googleSignIn()
+            .then((result) => {
+                history.push(redirectUrl)
+
+            }).catch((error) => {
+
+            }).finally(() => {
+                setIsLoading(false)
+            })
+    }
     const handleLogin = (e) => {
         login(logindata.email, logindata.password)
+            .then((userCredential) => {
+                history.push(redirectUrl)
+
+            })
+            .catch((error) => {
+
+            })
+            .finally(() => setIsLoading(false));
         e.preventDefault();
     }
 
@@ -30,7 +56,7 @@ const Login = () => {
                     <div class="w-full p-8 lg:w-1/2">
 
                         <p class="lg:visible lg:text-4xl font-bold text-yellow-400 dark:hover:text-gray-200 hover:border-blue-500 mx-1.5 sm:mx-6 text-center">WATERLOO</p>
-                        <button onClick={googleSignIn} class="flex w-full items-center justify-center mt-4 text-white rounded-lg shadow-md hover:bg-gray-100">
+                        <button onClick={hadleGoogleSignIn} class="flex w-full items-center justify-center mt-4 text-white rounded-lg shadow-md hover:bg-gray-100">
                             <div class="px-4 py-3">
                                 <svg class="h-6 w-6" viewBox="0 0 40 40">
                                     <path d="M36.3425 16.7358H35V16.6667H20V23.3333H29.4192C28.045 27.2142 24.3525 30 20 30C14.4775 30 10 25.5225 10 20C10 14.4775 14.4775 9.99999 20 9.99999C22.5492 9.99999 24.8683 10.9617 26.6342 12.5325L31.3483 7.81833C28.3717 5.04416 24.39 3.33333 20 3.33333C10.7958 3.33333 3.33335 10.7958 3.33335 20C3.33335 29.2042 10.7958 36.6667 20 36.6667C29.2042 36.6667 36.6667 29.2042 36.6667 20C36.6667 18.8825 36.5517 17.7917 36.3425 16.7358Z" fill="/FFC107" />

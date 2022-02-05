@@ -38,7 +38,7 @@ function App() {
             <Route path='/details/:packid'>
               <Details></Details>
             </Route>
-            <PrivateRoute path='/bookTicket'>
+            <PrivateRoute path='/bookTicket/:id'>
               <BookTicket></BookTicket>
             </PrivateRoute>
           </Switch>

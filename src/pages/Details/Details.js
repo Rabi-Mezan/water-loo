@@ -41,7 +41,7 @@ const Details = () => {
                             <div>
                                 <p className='text-white text-3xl font-bold  '>Ticket Fair<span class="text-5xl font-bold text-yellow-400 text-grey-darkest ml-5">£{pack.fair}<span class="text-lg">/PP</span></span></p>
                             </div>
-                            <Link to='/bookTicket' class="focus:outline-none mx-auto focus:ring-offset-2 focus:ring border border-white sm:border-transparent w-full sm:w-auto bg-white py-4 px-6 hover:bg-opacity-75 hover:scale-x-110 ">Book Ticket</Link>
+                            <Link to={`/bookTicket/${pack._id}`} class="focus:outline-none mx-auto focus:ring-offset-2 focus:ring border border-white sm:border-transparent w-full sm:w-auto bg-white py-4 px-4 hover:bg-opacity-75 hover:scale-x-110 ">Book Ticket</Link>
                         </div>
                     </div>
                 </div>
