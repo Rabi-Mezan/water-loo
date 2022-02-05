@@ -22,7 +22,7 @@ const Header = () => {
                     {
                         user.email ?
                             <div class="border-b-2 border-transparent hover:text-gray-800 dark:hover:text-gray-200 mx-1.5 sm:mx-6">
-                                <Link to="/" class="border-b-2 border-transparent hover:text-gray-800 dark:hover:text-gray-200 hover:border-blue-500 mx-1.5 sm:mx-6">
+                                <Link to="/dashboard" class="border-b-2 border-transparent hover:text-gray-800 dark:hover:text-gray-200 hover:border-blue-500 mx-1.5 sm:mx-6">
                                     Dashboard
                                 </Link>
 

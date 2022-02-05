@@ -15,6 +15,7 @@ import Details from './pages/Details/Details';
 import AuthProvider from './Context/AuthProvider/AuthProvider';
 import PrivateRoute from './pages/PrivateRoute/PrivateRoute';
 import BookTicket from './pages/BookTicket/BookTicket';
+import Dashboard from './pages/Dashboard/Dashboard';
 
 function App() {
   return (
@@ -37,6 +38,9 @@ function App() {
             </Route>
             <Route path='/details/:packid'>
               <Details></Details>
+            </Route>
+            <Route path='/dashboard'>
+              <Dashboard></Dashboard>
             </Route>
             <PrivateRoute path='/bookTicket/:id'>
               <BookTicket></BookTicket>
