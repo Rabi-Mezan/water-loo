@@ -8,6 +8,7 @@ initAuth()
 const useFirebase = () => {
     const [user, setUser] = useState({})
     const [IsLoading, setIsLoading] = useState(true)
+    const [admin, setAdmin] = useState(false)
     const [error, setError] = useState('')
 
 
@@ -23,6 +24,9 @@ const useFirebase = () => {
             .then((userCredential) => {
                 // Signed in 
                 const user = userCredential.user;
+                const newUser = { email, displayName: name }
+                setUser(newUser);
+                saveUser(email, name);
 
             })
             .catch((error) => {
@@ -73,12 +77,37 @@ const useFirebase = () => {
 
     }
 
+
+    //save user
+    const saveUser = (email, displayName) => {
+        const user = { email, displayName };
+        fetch('http://localhost:5000/users', {
+            method: "POST",
+            headers: {
+                'content-type': 'application/json'
+            },
+            body: JSON.stringify(user)
+        })
+            .then()
+    }
+
+
+    // cheking admin or not
+    useEffect(() => {
+        fetch(`http://localhost:5000/users/${user?.email}`)
+            .then(res => res.json())
+            .then(data => setAdmin(data.admin))
+    }, [user?.email])
+
     return {
         googleSignIn,
         registerUser,
         user,
         login,
         logout,
+        saveUser,
+        IsLoading,
+        admin,
         setIsLoading
     }
 }

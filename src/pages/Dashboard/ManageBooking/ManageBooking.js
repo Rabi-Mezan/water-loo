@@ -1,22 +1,19 @@
 import React, { useEffect, useState } from 'react';
-import { useHistory } from 'react-router-dom';
-import useAuth from '../../../hooks/useAuth';
 
-const Mybooking = () => {
-    const [booking, setBooking] = useState([])
-    const { user } = useAuth()
+const ManageBooking = () => {
+    const [allbooking, setAllbooing] = useState([])
     const [control, setControl] = useState(false)
-    const history = useHistory()
 
     useEffect(() => {
-        fetch(`http://localhost:5000/mybooking/${user?.email}`)
+        fetch('http://localhost:5000/booking')
             .then(res => res.json())
-            .then(result => {
-                console.log(result);
-                setBooking(result)
+            .then(data => {
+                setAllbooing(data)
             })
-    }, [control, history])
+    }, [])
 
+
+    //cancel ticket by admin
     const handleCancel = id => {
         const procedd = window.confirm('Are you sure to cancel the order??')
         if (procedd) {
@@ -42,6 +39,26 @@ const Mybooking = () => {
     }
 
 
+    //approved ticket booking by admin 
+    const handleUpdate = id => {
+        fetch(`http://localhost:5000/booking/${id}`, {
+            method: "PUT",
+            headers: {
+                "content-type": "application/json"
+            }
+        })
+            .then(res => res.json())
+            .then(data => {
+                if (data.modifiedCount) {
+                    alert('Booking Approved Successfully')
+                    setControl(!control)
+                }
+                else {
+                    setControl(false)
+                }
+            })
+    }
+
     return (
         <div>
 
@@ -51,9 +68,10 @@ const Mybooking = () => {
                 <div class="mt-10 flex flex-col xl:flex-row jusitfy-center items-stretch w-full xl:space-x-8 space-y-4 md:space-y-6 xl:space-y-0">
                     <div class="flex flex-col justify-start items-start w-full space-y-4 md:space-y-6 xl:space-y-8">
                         <div class="flex flex-col justify-start items-start dark:bg-gray-800 bg-black px-4 py-4 md:py-6 md:p-6 xl:p-8 w-full">
-                            <p class="text-lg md:text-xl dark:text-white font-semibold leading-6 xl:leading-5 text-gray-800">Booking History</p>
+                            <p class="text-lg md:text-xl dark:text-white font-semibold leading-6 xl:leading-5 text-gray-800">Booking Count  <span>:{allbooking.length}</span></p>
+
                             {
-                                booking.map(book =>
+                                allbooking.map(book =>
                                     <div class="mt-4 md:mt-6 flex flex-col md:flex-row justify-start items-start md:items-center md:space-x-6 xl:space-x-8 w-full ">
                                         <div class="pb-4 md:pb-8 w-full md:w-40">
                                             <img class="w-full hidden md:block" src={book.pack.img} alt="dress" />
@@ -66,12 +84,16 @@ const Mybooking = () => {
                                                     <p class="text-sm dark:text-white leading-none text-gray-800"><span class="dark:text-gray-400 text-gray-300">Booking Name: </span>{book.name} </p>
                                                     <p class="text-sm dark:text-white leading-none text-gray-800"><span class="dark:text-gray-400 text-gray-300">Person: </span>{book.person}</p>
                                                     <p class="text-sm dark:text-white leading-none text-gray-800"><span class="dark:text-gray-400 text-gray-300">Phone: </span> {book.phone}</p>
-                                                    <p class="text-sm dark:text-white leading-none text-gray-800"><span class="dark:text-gray-400 text-gray-300">Status: </span> {book.status}</p>
+                                                    <p class="text-sm font-bold dark:text-yellow-400 leading-none text-gray-800"><span class="dark:text-gray-400 text-gray-300">Status: </span> {book.status}</p>
                                                 </div>
                                             </div>
-                                            <div onClick={() => { handleCancel(book._id) }} className='mx-10'>
-                                                <button className='w-60 p-5 bg-white '>Cancel Ticket</button>
+                                            <div onClick={() => { handleUpdate(book._id) }} className='mx-2'>
+                                                <button className='w-40 p-5 bg-white '>Approve</button>
                                             </div>
+                                            <div onClick={() => { handleCancel(book._id) }} className='mx-2'>
+                                                <button className='w-40 p-5 bg-white '>Cancel Ticket</button>
+                                            </div>
+
                                         </div>
                                     </div>
                                 )
@@ -83,8 +105,9 @@ const Mybooking = () => {
 
                 </div>
             </div>
+
         </div>
     );
 };
 
-export default Mybooking;
+export default ManageBooking;

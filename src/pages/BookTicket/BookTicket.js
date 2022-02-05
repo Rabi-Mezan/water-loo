@@ -54,7 +54,7 @@ const BookTicket = () => {
                 <br />
                 <input className='p-2 bg-gray-100 rounded shadow' {...register("package")} defaultValue={pack.title} readOnly />
                 <br />
-                <input className='bg-gray-700 py-2 rounded shadow font-bold text-white' type="submit" value='BUY' />
+                <input className='bg-gray-700 py-2 rounded shadow font-bold text-white' type="submit" value='BOOK' />
             </form>
         </div>
     );

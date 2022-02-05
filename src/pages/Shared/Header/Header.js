@@ -26,7 +26,7 @@ const Header = () => {
                                     Dashboard
                                 </Link>
 
-                                {user.email}    <button onClick={logout} className='bg-gray-400 text-black px-4 py-1 font-bold rounded-lg ml-5'>Logout</button>
+                                {user?.displayName || user.email}    <button onClick={logout} className='bg-gray-400 text-black px-4 py-1 font-bold rounded-lg ml-5'>Logout</button>
                             </div>
                             :
 
