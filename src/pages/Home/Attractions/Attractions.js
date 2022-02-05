@@ -38,7 +38,7 @@ const Attractions = () => {
 
                                         <div class="absolute bottom-0 left-0 p-6 bg-blue-500">
                                             <h2 class="text-xl font-semibold 5 text-white">Water Slides</h2>
-                                            <p class="text-base leading-4 text-white mt-2">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Deleniti, aperiam.</p>
+                                            <p class="text-xs leading-4 text-white mt-2">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Deleniti, aperiam.</p>
                                             <a href="/" class="focus:outline-none focus:underline flex items-center mt-4 cursor-pointer text-white hover:text-gray-200 hover:underline">
                                                 <p class="pr-2 text-sm font-medium leading-none">Read More</p>
                                                 <svg class="fill-stroke" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -54,7 +54,7 @@ const Attractions = () => {
 
                                         <div class="absolute bottom-0 left-0 p-6 bg-blue-500 ">
                                             <h2 class="text-xl font-semibold 5 text-white">World Class Rides</h2>
-                                            <p class="text-base leading-4 text-white mt-2">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Praesentium, minus.</p>
+                                            <p class="text-xs leading-4 text-white mt-2">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Praesentium, minus.</p>
                                             <a href="/" class="focus:outline-none focus:underline flex items-center mt-4 cursor-pointer text-white hover:text-gray-200 hover:underline">
                                                 <p class="pr-2 text-sm font-medium leading-none">Read More</p>
                                                 <svg class="fill-stroke" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">

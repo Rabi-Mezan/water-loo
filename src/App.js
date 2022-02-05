@@ -12,31 +12,39 @@ import Footer from './pages/Shared/Footer/Footer';
 import Login from './pages/Login/Login';
 import Register from './pages/Register/Register';
 import Details from './pages/Details/Details';
+import AuthProvider from './Context/AuthProvider/AuthProvider';
+import PrivateRoute from './pages/PrivateRoute/PrivateRoute';
+import BookTicket from './pages/BookTicket/BookTicket';
 
 function App() {
   return (
     <div className="">
-      <Router>
-        <Header></Header>
-        <Switch>
-          <Route path='/home'>
-            <Home></Home>
-          </Route>
-          <Route path='/packages'>
-            <Packages></Packages>
-          </Route>
-          <Route path='/login'>
-            <Login></Login>
-          </Route>
-          <Route path='/register'>
-            <Register></Register>
-          </Route>
-          <Route path='/details/:packid'>
-            <Details></Details>
-          </Route>
-        </Switch>
-        <Footer></Footer>
-      </Router>
+      <AuthProvider>
+        <Router>
+          <Header></Header>
+          <Switch>
+            <Route path='/home'>
+              <Home></Home>
+            </Route>
+            <Route path='/packages'>
+              <Packages></Packages>
+            </Route>
+            <Route path='/login'>
+              <Login></Login>
+            </Route>
+            <Route path='/register'>
+              <Register></Register>
+            </Route>
+            <Route path='/details/:packid'>
+              <Details></Details>
+            </Route>
+            <PrivateRoute path='/bookTicket'>
+              <BookTicket></BookTicket>
+            </PrivateRoute>
+          </Switch>
+          <Footer></Footer>
+        </Router>
+      </AuthProvider>
 
     </div>
   );

@@ -42,14 +42,14 @@ const Featured = () => {
                                     <h3 class="font-light text-xl uppercase mb-2 text-grey-darkest">{item.title}</h3>
 
                                     <span class="text-5xl text-grey-darkest">£{item.fair}<span class="text-lg">/PP</span></span>
-                                    <div class="flex items-center mt-4">
-                                        <div class="pr-2 my-2 text-xs">
+                                    <div class="flex items-center mt-1">
+                                        <div class="pr-2 my-1 text-xs">
                                             {item.description.slice(0, 250)}
                                         </div>
 
                                     </div>
                                 </div>
-                                <Link to={`/details/${item._id}`} className="bg-gray-100 ml-3 p-3  flex items-left justify-between transition hover:bg-grey-light uppercase">
+                                <Link to={`/details/${item._id}`} className="bg-gray-100 ml-3 p-3  flex items-center justify-between transition hover:bg-grey-light uppercase">
                                     See Details
                                     <i class="fas fa-chevron-right"></i>
                                 </Link>
