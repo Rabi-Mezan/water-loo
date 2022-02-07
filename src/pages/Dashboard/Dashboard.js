@@ -24,10 +24,10 @@ const Dashboard = () => {
 
             <link rel="stylesheet" to="https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css" />
 
-            <div class="min-h-screen flex flex-row bg-gray-100">
-                <div class="flex flex-col w-1/3 bg-white rounded-r-3xl overflow-hidden">
+            <div class="min-h-screen lg:flex flex-row bg-gray-100">
+                <div class="flex flex-col lg:w-1/3 bg-white rounded-r-3xl overflow-hidden">
                     <div class="flex items-center justify-center h-24 shadow-md">
-                        <Link to="/" class="lg:visible lg:text-4xl font-bold text-yellow-400 dark:hover:text-gray-200 hover:border-blue-500 mx-1.5 sm:mx-6">WATERLOO</Link>
+                        <Link to="/" class="lg:visible lg:text-4xl font-bold text-yellow-400 dark:hover:text-gray-200 hover:border-blue-500 hidden md:block mx-1.5 sm:mx-6">WATERLOO</Link>
                     </div>
 
                     {
@@ -77,7 +77,7 @@ const Dashboard = () => {
                     }
 
                 </div>
-                <div className='flex mx-auto w-full '>
+                <div className='flex mx-auto w-full  dark:bg-gray-800'>
                     <Switch>
 
                         <Route exact path={path}>

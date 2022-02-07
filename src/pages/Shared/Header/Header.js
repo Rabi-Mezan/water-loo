@@ -11,30 +11,30 @@ const Header = () => {
                 <div class="container flex items-center justify-center p-6 mx-auto text-gray-600 capitalize dark:text-gray-300">
 
 
-                    <Link to="/home" class="border-b-2 border-transparent hover:text-gray-800 dark:hover:text-gray-200 hover:border-blue-500 mx-1.5 sm:mx-6">home</Link>
+                    <Link to="/home" class="border-b-2 border-transparent hover:text-gray-800 dark:hover:text-gray-200 hover:border-blue-500 mx-1.5 text-xs lg:text-lg sm:mx-2">home</Link>
 
-                    <Link to="/packages" class="border-b-2 border-transparent hover:text-gray-800 dark:hover:text-gray-200 hover:border-blue-500 mx-1.5 sm:mx-6">Packages</Link>
+                    <Link to="/packages" class="border-b-2 border-transparent hover:text-gray-800 dark:hover:text-gray-200 hover:border-blue-500 mx-1.5 text-xs lg:text-lg sm:mx-2">Packages</Link>
 
-                    <Link to="/" class="lg:visible lg:text-4xl font-bold text-yellow-400 dark:hover:text-gray-200 hover:border-blue-500 mx-1.5 sm:mx-6">WATERLOO</Link>
+                    <Link to="/home" class="lg:visible lg:text-4xl font-bold text-yellow-400 dark:hover:text-gray-200 hover:border-blue-500 mx-1.5 sm:mx-6">WATERLOO</Link>
 
 
 
                     {
                         user.email ?
-                            <div class="border-b-2 border-transparent hover:text-gray-800 dark:hover:text-gray-200 mx-1.5 sm:mx-6">
-                                <Link to="/dashboard" class="border-b-2 border-transparent hover:text-gray-800 dark:hover:text-gray-200 hover:border-blue-500 mx-1.5 sm:mx-6">
+                            <div class="border-b-2 flex justify-center  items-center border-transparent hover:text-gray-800 dark:hover:text-gray-200 mx-1.5 sm:mx-6">
+                                <Link to="/dashboard" class="border-b-2 border-transparent hover:text-gray-800 dark:hover:text-gray-200 hover:border-blue-500  mx-1.5 text-xs lg:text-lg sm:mx-2">
                                     Dashboard
                                 </Link>
 
-                                {user?.displayName || user.email}    <button onClick={logout} className='bg-gray-400 text-black px-4 py-1 font-bold rounded-lg ml-5'>Logout</button>
+                                <button onClick={logout} className='bg-gray-400 text-black lg:px-4 py-1 lg:font-bold px-3 hidden md:block lg:text-lg text-xs rounded-lg ml-5 mr-auto '>Logout</button>
                             </div>
                             :
 
                             <div>
-                                <Link to="/login" class="border-b-2 border-transparent hover:text-gray-800 dark:hover:text-gray-200 hover:border-blue-500 mx-1.5 sm:mx-6">
+                                <Link to="/login" class="border-b-2 border-transparent hover:text-gray-800 dark:hover:text-gray-200 hover:border-blue-500  mx-1.5 text-xs lg:text-lg sm:mx-2">
                                     Login
                                 </Link>
-                                <Link to="/register" class="border-b-2 border-transparent hover:text-gray-800 dark:hover:text-gray-200 hover:border-blue-500 mx-1.5 sm:mx-6">
+                                <Link to="/register" class="border-b-2 border-transparent hover:text-gray-800 dark:hover:text-gray-200 hover:border-blue-500  mx-1.5 text-xs lg:text-lg sm:mx-2">
                                     Register
                                 </Link>
                             </div>

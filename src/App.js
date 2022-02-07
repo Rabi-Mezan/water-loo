@@ -16,7 +16,7 @@ import AuthProvider from './Context/AuthProvider/AuthProvider';
 import PrivateRoute from './pages/PrivateRoute/PrivateRoute';
 import BookTicket from './pages/BookTicket/BookTicket';
 import Dashboard from './pages/Dashboard/Dashboard';
-import NotFound from './pages/Notfound/NotFound';
+
 
 function App() {
   return (
@@ -40,15 +40,12 @@ function App() {
             <Route path='/register'>
               <Register></Register>
             </Route>
-            <Route exact path='/details/:packid'>
+            <Route path='/details/:packid'>
               <Details></Details>
             </Route>
             <Route path='/dashboard'>
               <Dashboard></Dashboard>
             </Route>
-            {/* <Route exact path='*'>
-              <NotFound></NotFound>
-            </Route> */}
             <PrivateRoute path='/bookTicket/:id'>
               <BookTicket></BookTicket>
             </PrivateRoute>

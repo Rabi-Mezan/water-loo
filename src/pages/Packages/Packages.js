@@ -44,40 +44,37 @@ const Packages = () => {
                 ))}
             </Slider>
 
-            <div className='grid grid-cols-2 mx-4 content-center gap-8 py-10'>
+            <div class="flex flex-col items-center my-12 p-6 lg:p-0 justify-center">
+                <h1 class="lg:text-4xl text-xl font-bold leading-9 text-center text-black uppercase">FIND ALL OUR  ATTRACTIONS</h1>
+                <p class="lg:text-base text-xs leading-normal text-center text-gray-600 dark:text-gray mt-4 lg:w-2/3 md:w-10/12 w-full">For nearly one hundred years, Knott's Berry Farm has been drawing fans from all over. What started as a small family farm soon grew into a world famous destination.</p>
+            </div>
+
+            <div className='grid lg:grid-cols-2 grid-cols-1  lg:mx-4 content-center lg:gap-8 lg:py-10'>
                 {
                     packages.map(pack =>
 
-                        <div class="py-6 m-10 border-y-2 border-blue-400 shadow">
-                            <div class="flex max-w-1/3 bg-white  rounded-lg overflow-hidden">
-                                <div class="w-1/3 bg-cover" style={{
+                        <div
+                            data-aos="zoom-in-down"
+
+                            data-aos-delay="10"
+                            data-aos-duration="1000"
+                            data-aos-anchor-placement="top-center"
+                            class="py-5 m-10 shadow-md">
+                            <div class="lg:flex lg:max-w-1/3 bg-white  rounded-lg lg:overflow-hidden">
+                                <div class="lg:w-1/3 bg-cover" style={{
                                     backgroundImage: `url(${pack.img})`
                                 }}>
                                 </div>
-                                <div class="w-2/3  p-4">
+                                <div class="lg:w-2/3   p-4">
                                     <h1 class="text-gray-900 font-bold text-2xl uppercase">{pack.title}</h1>
                                     <p class="mt-2 text-gray-600 text-xs">{pack.description.slice(0, 250)}</p>
-                                    <div class="flex item-center mt-2">
-                                        <svg class="w-5 h-5 fill-current text-gray-700" viewBox="0 0 24 24">
-                                            <path d="M12 17.27L18.18 21L16.54 13.97L22 9.24L14.81 8.63L12 2L9.19 8.63L2 9.24L7.46 13.97L5.82 21L12 17.27Z" />
-                                        </svg>
-                                        <svg class="w-5 h-5 fill-current text-gray-700" viewBox="0 0 24 24">
-                                            <path d="M12 17.27L18.18 21L16.54 13.97L22 9.24L14.81 8.63L12 2L9.19 8.63L2 9.24L7.46 13.97L5.82 21L12 17.27Z" />
-                                        </svg>
-                                        <svg class="w-5 h-5 fill-current text-gray-700" viewBox="0 0 24 24">
-                                            <path d="M12 17.27L18.18 21L16.54 13.97L22 9.24L14.81 8.63L12 2L9.19 8.63L2 9.24L7.46 13.97L5.82 21L12 17.27Z" />
-                                        </svg>
-                                        <svg class="w-5 h-5 fill-current text-gray-500" viewBox="0 0 24 24">
-                                            <path d="M12 17.27L18.18 21L16.54 13.97L22 9.24L14.81 8.63L12 2L9.19 8.63L2 9.24L7.46 13.97L5.82 21L12 17.27Z" />
-                                        </svg>
-                                        <svg class="w-5 h-5 fill-current text-gray-500" viewBox="0 0 24 24">
-                                            <path d="M12 17.27L18.18 21L16.54 13.97L22 9.24L14.81 8.63L12 2L9.19 8.63L2 9.24L7.46 13.97L5.82 21L12 17.27Z" />
-                                        </svg>
+
+                                    <div className=''>
+                                        <Link to={`/details/${pack._id}`} class="lg:flex items-center justify-between lg:mt-5 my-4">
+                                            <h1 class="text-gray-700 font-bold text-xl my-4">£{pack.fair}/PP</h1>
+                                            <button class="px-3 lg:w-1/3 h-10 py-2 bg-black hover:scale-110 text-white text-xs uppercase">See Details</button>
+                                        </Link>
                                     </div>
-                                    <Link to={`/details/${pack._id}`} class="flex item-center justify-between mt-3">
-                                        <h1 class="text-gray-700 font-bold text-xl">£{pack.fair}/PP</h1>
-                                        <button class="px-3 w-2/3 h-10 py-2 bg-gray-800 opacity-50 hover:opacity-90 hover:scale-110 text-white text-xs font-bold uppercase rounded">See Details</button>
-                                    </Link>
                                 </div>
                             </div>
                         </div>

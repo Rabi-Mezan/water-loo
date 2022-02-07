@@ -62,22 +62,22 @@ const ManageBooking = () => {
     return (
         <div>
 
-            <div class="py-14 px-4 md:px-6 2xl:px-20 w-full  2xl:mx-auto">
+            <div class="py-14 lg:px-4 md:px-6 2xl:px-20 w-full  2xl:mx-auto">
 
 
                 <div class="mt-10 flex flex-col xl:flex-row jusitfy-center items-stretch w-full xl:space-x-8 space-y-4 md:space-y-6 xl:space-y-0">
-                    <div class="flex flex-col justify-start items-start w-full space-y-4 md:space-y-6 xl:space-y-8">
-                        <div class="flex flex-col justify-start items-start dark:bg-gray-800 bg-black px-4 py-4 md:py-6 md:p-6 xl:p-8 w-full">
+                    <div class="flex flex-col justify-start items-start lg:w-full space-y-4 md:space-y-6 xl:space-y-8">
+                        <div class="lg:flex lg:flex-col justify-between items-start dark:bg-gray-800 bg-black px-4 py-4 md:py-6 md:p-6 xl:p-8 lg:w-full ">
                             <p class="text-lg md:text-xl dark:text-white font-semibold leading-6 xl:leading-5 text-gray-800">Booking Count  <span>:{allbooking.length}</span></p>
 
                             {
                                 allbooking.map(book =>
-                                    <div class="mt-4 md:mt-6 flex flex-col md:flex-row justify-start items-start md:items-center md:space-x-6 xl:space-x-8 w-full ">
+                                    <div class="mt-4 md:mt-6 lg:flex flex-col md:flex-row justify-between items-start md:items-center md:space-x-6 xl:space-x-8 w-full ">
                                         <div class="pb-4 md:pb-8 w-full md:w-40">
-                                            <img class="w-full hidden md:block" src={book.pack.img} alt="dress" />
+                                            <img class="w-full  md:block" src={book.pack.img} alt="dress" />
 
                                         </div>
-                                        <div class="border-b border-gray-200 md:flex-row flex-col flex justify-between items-start px-20 w-full pb-8 space-y-4 md:space-y-0">
+                                        <div class="border-b border-gray-200 md:flex-row flex-col flex justify-between items-start lg:px-20 w-full pb-8 space-y-4 md:space-y-0">
                                             <div class="w-full flex flex-col justify-start items-start space-y-8">
                                                 <h3 class="text-xl dark:text-white xl:text-2xl font-semibold leading-6 text-gray-800">{book.pack.title}</h3>
                                                 <div class="flex justify-start items-start flex-col space-y-2">
@@ -87,11 +87,13 @@ const ManageBooking = () => {
                                                     <p class="text-sm font-bold dark:text-yellow-400 leading-none text-gray-800"><span class="dark:text-gray-400 text-gray-300">Status: </span> {book.status}</p>
                                                 </div>
                                             </div>
-                                            <div onClick={() => { handleUpdate(book._id) }} className='mx-2'>
-                                                <button className='w-40 p-5 bg-white '>Approve</button>
-                                            </div>
-                                            <div onClick={() => { handleCancel(book._id) }} className='mx-2'>
-                                                <button className='w-40 p-5 bg-white '>Cancel Ticket</button>
+                                            <div className='flex justify-center'>
+                                                <div onClick={() => { handleUpdate(book._id) }} className='mx-2'>
+                                                    <button className='lg:w-60 p-5 w-40 mt-5 lg:mt-0 mx-auto bg-white '>Approve</button>
+                                                </div>
+                                                <div onClick={() => { handleCancel(book._id) }} className='mx-2'>
+                                                    <button className='lg:w-60 mt-5 lg:mt-0 p-5 w-full mx-auto  bg-white'>Cancel Ticket</button>
+                                                </div>
                                             </div>
 
                                         </div>

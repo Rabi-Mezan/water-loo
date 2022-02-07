@@ -8,14 +8,26 @@ const Attractions = () => {
             <div class="flex bg-gray-100 justify-center items-center pt-14">
 
                 <div class="2xl:mx-auto 2xl:container lg:px-20 lg:py-16 md:py-12 md:px-6 py-9 px-4 w-96 sm:w-auto">
-                    <div role="main" class="flex flex-col items-center justify-center my-10 mb-20">
-                        <h1 class="text-4xl font-bold leading-9 text-center text-black uppercase">New Attractions</h1>
-                        <p class="text-base leading-normal text-center text-gray-600 dark:text-gray mt-4 lg:w-2/3 md:w-10/12 w-11/12">In this guide we will list out the best rides that Busch Gardens Virginia offers, how each one is unique, and actual (point of view) videos of the </p>
+                    <div
+                        data-aos="zoom-in-down"
+                        data-aos-delay="50"
+                        data-aos-duration="1000"
+                        data-aos-anchor-placement="top-center"
+
+                        role="main" class="flex flex-col items-center justify-center my-10 mb-20">
+                        <h1 class="lg:text-4xl text-2xl font-bold leading-9 text-center text-black uppercase">New Attractions</h1>
+                        <p class="lg:text-base text-xs leading-normal text-center text-gray-600 dark:text-gray mt-4 lg:w-2/3 md:w-10/12 w-11/12">In this guide we will list out the best rides that Busch Gardens Virginia offers, how each one is unique, and actual (point of view) videos of the </p>
                     </div>
-                    <div class="lg:flex items-stretch md:mt-12 mt-8">
+                    <div
+
+                        data-aos="zoom-in-up"
+                        data-aos-delay="50"
+                        data-aos-duration="1000"
+                        data-aos-anchor-placement="top-center"
+                        class="lg:flex items-stretch md:mt-12 mt-8">
                         <div class="lg:w-full">
                             <div class="sm:flex items-center justify-between xl:gap-x-8 gap-x-6">
-                                <div class="sm:w-1/2 w-60 relative">
+                                <div class="sm:w-1/2 lg:mb-0 mb-10  relative">
                                     <div className='opacity-50 hover:opacity-100'>
 
                                         <div class="absolute bottom-0 left-0 p-6 bg-blue-500 bg-blend-lighten ">
@@ -33,7 +45,7 @@ const Attractions = () => {
                                     </div>
                                     <img src="https://i.ibb.co/QX4TjKw/conner-baker-wv4-Pu-Jjdbw-unsplash.jpg" class="w-full" alt="chair" />
                                 </div>
-                                <div class="sm:w-1/2 relative">
+                                <div class="sm:w-1/2 relative lg:mb-0 mb-10  ">
                                     <div className='opacity-50 hover:opacity-100'>
 
                                         <div class="absolute bottom-0 left-0 p-6 bg-blue-500">

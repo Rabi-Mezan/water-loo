@@ -5,7 +5,7 @@ const Feedback = () => {
         <div>
 
             <section>
-                <div class="bg-gray-700 text-white py-20">
+                <div class="dark:bg-gray-800 text-white py-20">
                     <div class="container mx-auto flex flex-col md:flex-row my-6 md:my-24">
                         <div class="flex flex-col w-full lg:w-1/3 p-8">
                             <p class="ml-6 text-yellow-300 text-lg uppercase tracking-loose">REVIEW</p>

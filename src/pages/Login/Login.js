@@ -50,7 +50,7 @@ const Login = () => {
 
     return (
         <div>
-            <div class="px-12 h-screen content-center my-20">
+            <div class="lg:px-12 lg:h-screen content-center my-20">
                 <div class="flex bg-white rounded-lg  overflow-hidden mx-auto max-w-sm lg:max-w-full">
                     <div class="hidden lg:block lg:w-1/2 bg-cover" style={{ backgroundImage: "url('https://images.unsplash.com/photo-1460788150444-d9dc07fa9dba?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1yZWxhdGVkfDE4fHx8ZW58MHx8fHw%3D&auto=format&fit=crop&w=600&q=60')" }}></div>
                     <div class="w-full p-8 lg:w-1/2">
@@ -65,7 +65,7 @@ const Login = () => {
                                     <path d="M36.3425 16.7358H35V16.6667H20V23.3333H29.4192C28.7592 25.1975 27.56 26.805 26.0133 27.9758C26.0142 27.975 26.015 27.975 26.0158 27.9742L31.1742 32.3392C30.8092 32.6708 36.6667 28.3333 36.6667 20C36.6667 18.8825 36.5517 17.7917 36.3425 16.7358Z" fill="/1976D2" />
                                 </svg>
                             </div>
-                            <h1 class="px-4 py-3 w-5/6 text-center text-gray-600 font-bold">Sign in with Google</h1>
+                            <h1 class="lg:px-4 py-3 lg:w-5/6 text-center text-gray-600 font-bold">Sign in with Google</h1>
                         </button>
                         <div class="mt-4 flex items-center justify-between">
                             <span class="border-b w-1/5 lg:w-1/4"></span>
@@ -96,13 +96,13 @@ const Login = () => {
                                         class="bg-gray-200 text-gray-700 focus:outline-none focus:shadow-outline border border-gray-300 rounded py-2 px-4 block w-full appearance-none" />
                                 </div>
                                 <div class="mt-8">
-                                    <button class="bg-gray-700 text-white font-bold py-2 px-4 w-full rounded hover:bg-gray-600">Login</button>
+                                    <button class="bg-gray-700 text-white font-bold py-2 px-4 w-full rounded hover:bg-gray-600  uppercase">Login</button>
                                 </div>
                             </form>
                         </div>
                         <div class="mt-4 flex items-center justify-between">
-                            <span class="border-b w-1/5 md:w-1/4"></span>
-                            <Link to='/register' href="/" class="text-xs text-gray-500 uppercase">New Here ? <span className='text-blue-500 font-bold'>Please Register</span></Link>
+                            <span class="border-b lg:w-1/5 md:w-1/4"></span>
+                            <Link to='/register' class="text-xs text-gray-500 uppercase">New Here ? <span className='text-blue-500 lg:font-bold'>Please Register</span></Link>
                             <span class="border-b w-1/5 md:w-1/4"></span>
                         </div>
                     </div>

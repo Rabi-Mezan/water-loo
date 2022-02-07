@@ -40,12 +40,12 @@ const BookTicket = () => {
 
     return (
 
-        <div className='grid lg:grid-cols-2 items-center justify-center h-screen px-10 py-16 bg-gray-100'>
+        <div className='grid lg:grid-cols-2  items-center justify-center h-screen px-10 py-16  bg-gray-100'>
             <div>
-                <img className='h-screen' src={pack.img} alt="" />
+                <img className='lg:h-screen hidden md:block' src={pack.img} alt="" />
             </div>
-            <form className='bg-blue-300 flex justify-center flex-col px-16 py-20 h-screen shadow' onSubmit={handleSubmit(onSubmit)}>
-                <input className='p-2 bg-gray-100 rounded shadow' {...register("name")} defaultValue={user.displayName} readOnly />
+            <form className='dark:bg-gray-800 flex justify-center flex-col px-16 py-20 h-screen shadow ' onSubmit={handleSubmit(onSubmit)}>
+                <input className='p-2 w-full bg-gray-100 rounded shadow' {...register("name")} defaultValue={user.displayName} readOnly />
                 <br />
                 <input className='p-2 bg-gray-100 rounded shadow' {...register("email")} defaultValue={user.email} readOnly />
                 <br />
