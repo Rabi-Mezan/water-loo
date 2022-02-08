@@ -1,11 +1,18 @@
-# Getting Started with Create React App
-#admin kamal@gmail.com
-#admin pass : 123456
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# WATERLOO
 
-## Available Scripts
+Visit Here For The Live View  [live site](https://waterloo-4c56d.web.app/).
 
-In the project directory, you can run:
+## Theme Park Online Ticket Booking Website
+### Technology-ReactJS, Tailwind ,NodeJS, ExpressJS, MongoDB, Firebase,Heroku.
+### Features:
+#### Users can buy online tickets for various packages of this theme park
+#### Dashboard for both admin and user
+#### Users Can view and manage their booked tickets and also can cancel a booking
+#### Users can give their feedback
+#### Admin Can manage all booked tickets and also can add new packages
+#### Users can register using email, password, or login using google sign in
+
+
 
 ### `npm start`
 
