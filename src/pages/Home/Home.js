@@ -8,7 +8,7 @@ import Speciality from './Speciality/Speciality';
 
 const Home = () => {
     return (
-        <div>
+        <div className=''>
             <Banner></Banner>
             <Attractions></Attractions>
             <Speciality></Speciality>

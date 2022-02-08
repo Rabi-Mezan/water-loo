@@ -6,9 +6,9 @@ const Header = () => {
     const { user, logout } = useFirebase()
 
     return (
-        <div className=''>
-            <nav class="bg-white shadow dark:bg-gray-800 ">
-                <div class="container flex items-center justify-center p-6 mx-auto text-gray-600 capitalize dark:text-gray-300">
+        <div className=' '>
+            <nav class="bg-white shadow dark:bg-gray-800  ">
+                <div class="container flex items-center justify-center p-6 mx-auto text-gray-600 capitalize dark:text-gray-300 ">
 
 
                     <Link to="/home" class="border-b-2 border-transparent hover:text-gray-800 dark:hover:text-gray-200 hover:border-blue-500 mx-1.5 text-xs lg:text-lg sm:mx-2">home</Link>
@@ -26,7 +26,7 @@ const Header = () => {
                                     Dashboard
                                 </Link>
 
-                                <button onClick={logout} className='bg-gray-400 text-black lg:px-4 py-1 lg:font-bold px-3 hidden md:block lg:text-lg text-xs rounded-lg ml-5 mr-auto '>Logout</button>
+                                <button onClick={logout} className='border-b-2 border-transparent hover:text-gray-800 dark:hover:text-gray-200 hover:border-blue-500  mx-1.5 text-xs lg:text-lg sm:mx-2 '>Logout</button>
                             </div>
                             :
 

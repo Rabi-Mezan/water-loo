@@ -58,7 +58,7 @@ const Speciality = () => {
                             <p className=' mx-auto text-sm'>Lorem ipsum dolor sit amet, consectetur adipisicing </p>
                         </div>
 
-                        <div className='py-14 col-span-2 px-4   items-bottom font-light mt-8'>
+                        <div className='py-14 col-span-2 px-4   items-bottom font-light mt-10'>
                             <div className='text-xl'>
                                 <p className='lg:flex text-2xl font-light my-5 uppercase lg:justify-between '>Our Schedule</p>
                             </div>

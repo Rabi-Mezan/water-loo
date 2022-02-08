@@ -49,7 +49,7 @@ const Packages = () => {
                 <p class="lg:text-base text-xs leading-normal text-center text-gray-600 dark:text-gray mt-4 lg:w-2/3 md:w-10/12 w-full">For nearly one hundred years, Knott's Berry Farm has been drawing fans from all over. What started as a small family farm soon grew into a world famous destination.</p>
             </div>
 
-            <div className='grid lg:grid-cols-2 grid-cols-1  lg:mx-4 content-center lg:gap-8 lg:py-10'>
+            <div className='grid lg:grid-cols-2 grid-cols-1  lg:mx-4 content-center lg:gap-2  lg:py-10'>
                 {
                     packages.map(pack =>
 
@@ -59,8 +59,8 @@ const Packages = () => {
                             data-aos-delay="10"
                             data-aos-duration="1000"
                             data-aos-anchor-placement="top-center"
-                            class="py-5 m-10 shadow-md">
-                            <div class="lg:flex lg:max-w-1/3 bg-white  rounded-lg lg:overflow-hidden">
+                            class=" m-10 shadow-md">
+                            <div class="lg:flex lg:max-w-1/3 bg-blue-50  rounded-lg lg:overflow-hidden">
                                 <div class="lg:w-1/3 bg-cover" style={{
                                     backgroundImage: `url(${pack.img})`
                                 }}>

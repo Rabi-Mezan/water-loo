@@ -26,6 +26,7 @@ const Login = () => {
     const hadleGoogleSignIn = () => {
         googleSignIn()
             .then((result) => {
+                console.log(result.user);
                 history.push(redirectUrl)
 
             }).catch((error) => {

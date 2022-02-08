@@ -10,7 +10,17 @@ const Footer = () => {
     return (
         <div>
             <div className=' h-auto py-5 lg:flex flex-col lg:items-strech  lg:justify-center  dark:bg-gray-800 lg:mt-28 px-4 lg:pt-20'>
-                <Link to="/" class="lg:visible lg:text-4xl font-bold text-yellow-400 dark:hover:text-gray-200 hover:border-blue-500 mb-10 lg:ml-14 lg:px-0 px-6">WATERLOO</Link>
+                <div className='my-6 lg:flex justify-between '>
+                    <Link to="/" class="lg:visible lg:text-4xl font-bold text-yellow-400 dark:hover:text-gray-200 hover:border-blue-500 mb-10 lg:ml-14 lg:px-0 px-6">WATERLOO</Link>
+                    <div className='lg:w-1/5 lg:text-2xl text-white flex justify-around items-start flex-col lg:px-0 px-6 my-5'>
+                        <h1 className='uppercase'>Follow Us On</h1>
+                        <div className='flex justify-around mt-2'>
+                            <i class="fab fa-facebook mr-3"></i>
+                            <i class="fab fa-twitter mr-3"></i>
+                            <i class="fab fa-instagram"></i>
+                        </div>
+                    </div>
+                </div>
                 <div className='grid lg:justify-items-start items-center lg:grid-cols-4  grid-cols-2 gap-5 lg:px-16 px-6'>
                     <div className='text-left  pr-4 leading-7'>
                         <h5 className='uppercase text-white font-semibold mb-4'>Links</h5>

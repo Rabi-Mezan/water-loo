@@ -69,8 +69,8 @@ const Mybooking = () => {
                                                     <p class="text-sm dark:text-white leading-none text-gray-800"><span class="dark:text-gray-400 text-gray-300">Status: </span> {book.status}</p>
                                                 </div>
                                             </div>
-                                            <div onClick={() => { handleCancel(book._id) }} className='mx-10'>
-                                                <button className='lg:w-60 p-5 w-40 mt-5 lg:mt-0 mx-auto bg-white '>Cancel Ticket</button>
+                                            <div onClick={() => { handleCancel(book._id) }} className='lg:mx-10 '>
+                                                <button className='lg:w-60 p-5 w-80 mt-5 lg:mt-0 mx-auto bg-white '>Cancel Ticket</button>
                                             </div>
                                         </div>
                                     </div>

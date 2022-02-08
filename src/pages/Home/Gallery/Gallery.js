@@ -23,10 +23,10 @@ const Gallery = () => {
                         <img src="https://i.ibb.co/CH4x6s5/frank-mckenna-Eg-B1u-SU5t-RA-unsplash.jpg"
                             alt="img" />
                     </div>
-                    <div class="w-full flex gap-2  col-span-2 row-span-2 rounded">
-                        <img src="https://images.unsplash.com/photo-1545960122-23d7d68938a6?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=435&q=80"
+                    <div class="w-full flex lg:gap-4  col-span-2 row-span-2 rounded">
+                        <img src="https://i.ibb.co/Rcmc32d/photo-1545960122-2.jpg"
                             alt="img" />
-                        <img className='lg:block hidden' src="https://images.unsplash.com/photo-1545960122-23d7d68938a6?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=435&q=80"
+                        <img className='lg:block hidden' src="https://i.ibb.co/Rcmc32d/photo-1545960122-2.jpg"
                             alt="img" />
                     </div>
                     <div class="w-full rounded">
@@ -45,7 +45,7 @@ const Gallery = () => {
                         <img src="https://i.ibb.co/hgPq0t3/derek-thomson-v-Y86-Rq8cfj-Q-unsplash.jpg"
                             alt="img" />
                     </div>
-                    <div className='button  flex  justify-start items-center'>
+                    <div className='button w-full  flex  justify-start items-center'>
                         <Link to="/home">Explore full Gallery</Link>
                     </div>
                 </div>
