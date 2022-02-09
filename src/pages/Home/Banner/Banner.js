@@ -12,12 +12,12 @@ const Banner = () => {
             style={{
                 backgroundImage: 'url(' + bgimage + ')',
                 backgroundSize: "cover",
-                height: "100vh",
+                height: "105vh",
                 width: "100vw",
 
 
             }}
-            class="banner"
+            class="banner paralax"
         >
             <section
                 className=''

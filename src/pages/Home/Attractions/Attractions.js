@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 const Attractions = () => {
     return (
@@ -34,12 +35,12 @@ const Attractions = () => {
                                             <div className=''>
                                                 <h2 class="text-xl font-semibold 5 text-white">Best Pools</h2>
                                                 <p class="leading-4 text-white mt-2 text-xs">Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam, voluptate?</p>
-                                                <a href="/" class="focus:outline-none focus:underline flex items-center mt-4 cursor-pointer text-white hover:text-gray-200 hover:underline">
+                                                <Link to="/" class="focus:outline-none focus:underline flex items-center mt-4 cursor-pointer text-white hover:text-gray-200 hover:underline">
                                                     <p class="pr-2 text-sm font-medium leading-none">Read More</p>
                                                     <svg class="fill-stroke" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
                                                         <path d="M5.75 12.5L10.25 8L5.75 3.5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
                                                     </svg>
-                                                </a>
+                                                </Link>
                                             </div>
                                         </div>
                                     </div>
@@ -51,12 +52,12 @@ const Attractions = () => {
                                         <div class="absolute bottom-0 left-0 p-6 bg-blue-500">
                                             <h2 class="text-xl font-semibold 5 text-white">Water Slides</h2>
                                             <p class="text-xs leading-4 text-white mt-2">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Deleniti, aperiam.</p>
-                                            <a href="/" class="focus:outline-none focus:underline flex items-center mt-4 cursor-pointer text-white hover:text-gray-200 hover:underline">
+                                            <Link to="/" class="focus:outline-none focus:underline flex items-center mt-4 cursor-pointer text-white hover:text-gray-200 hover:underline">
                                                 <p class="pr-2 text-sm font-medium leading-none">Read More</p>
                                                 <svg class="fill-stroke" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
                                                     <path d="M5.75 12.5L10.25 8L5.75 3.5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
                                                 </svg>
-                                            </a>
+                                            </Link>
                                         </div>
                                     </div>
                                     <img src="https://i.ibb.co/mGQPcpp/iker-urteaga-GIXUMw8wsoc-unsplash.jpghttps://i.ibb.co/mGQPcpp/iker-urteaga-GIXUMw8wsoc-unsplash.jpg" class="w-full" alt="chair" />
@@ -67,12 +68,12 @@ const Attractions = () => {
                                         <div class="absolute bottom-0 left-0 p-6 bg-blue-500 ">
                                             <h2 class="text-xl font-semibold 5 text-white">World Class Rides</h2>
                                             <p class="text-xs leading-4 text-white mt-2">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Praesentium, minus.</p>
-                                            <a href="/" class="focus:outline-none focus:underline flex items-center mt-4 cursor-pointer text-white hover:text-gray-200 hover:underline">
+                                            <Link to="/" class="focus:outline-none focus:underline flex items-center mt-4 cursor-pointer text-white hover:text-gray-200 hover:underline">
                                                 <p class="pr-2 text-sm font-medium leading-none">Read More</p>
                                                 <svg class="fill-stroke" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
                                                     <path d="M5.75 12.5L10.25 8L5.75 3.5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
                                                 </svg>
-                                            </a>
+                                            </Link>
                                         </div>
                                     </div>
                                     <img src="https://i.ibb.co/tXhzTRL/jaee-kim-e2-Vve-ZKIZy-Q-unsplash.jpg" class="w-full" alt="" />

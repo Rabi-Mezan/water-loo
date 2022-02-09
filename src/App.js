@@ -16,6 +16,7 @@ import AuthProvider from './Context/AuthProvider/AuthProvider';
 import PrivateRoute from './pages/PrivateRoute/PrivateRoute';
 import BookTicket from './pages/BookTicket/BookTicket';
 import Dashboard from './pages/Dashboard/Dashboard';
+import NotFound from './pages/Notfound/NotFound';
 
 
 function App() {
@@ -49,6 +50,9 @@ function App() {
             <PrivateRoute path='/bookTicket/:id'>
               <BookTicket></BookTicket>
             </PrivateRoute>
+            <Route path='*'>
+              <NotFound></NotFound>
+            </Route>
           </Switch>
           <Footer></Footer>
         </Router>

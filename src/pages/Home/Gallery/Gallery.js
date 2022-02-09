@@ -23,7 +23,7 @@ const Gallery = () => {
                         <img src="https://i.ibb.co/CH4x6s5/frank-mckenna-Eg-B1u-SU5t-RA-unsplash.jpg"
                             alt="img" />
                     </div>
-                    <div class="w-full flex lg:gap-4  col-span-2 row-span-2 rounded">
+                    <div class="w-full flex lg:gap-5  col-span-2 row-span-2 rounded">
                         <img src="https://i.ibb.co/Rcmc32d/photo-1545960122-2.jpg"
                             alt="img" />
                         <img className='lg:block hidden' src="https://i.ibb.co/Rcmc32d/photo-1545960122-2.jpg"

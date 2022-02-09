@@ -8,7 +8,7 @@ const Newslatter = () => {
     return (
         <div>
 
-            <div class="2xl:mx-auto 2xl:container mx-4 py-16">
+            <div class="2xl:mx-auto 2xl:container  ">
                 <div class="w-full relative flex items-center justify-center">
                     <img className='' src="https://images.unsplash.com/photo-1508162252424-e8ad5ef02539?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80" alt="" class="w-full h-full absolute z-0  xl:block" />
 
