@@ -6,7 +6,7 @@ const AddPackages = () => {
 
     const { register, handleSubmit, reset } = useForm();
     const onSubmit = data => {
-        fetch('https://arcane-anchorage-85397.herokuapp.com/packages', {
+        fetch('https://waterloo-server-rabi-mezan.vercel.app/packages', {
             method: "POST",
             headers: {
                 "content-type": "application/json"

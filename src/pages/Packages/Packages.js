@@ -12,7 +12,7 @@ const Packages = () => {
 
 
     useEffect(() => {
-        fetch('https://arcane-anchorage-85397.herokuapp.com/packages')
+        fetch('https://waterloo-server-rabi-mezan.vercel.app/packages')
             .then(res => res.json())
             .then(data => setPackages(data))
     }, [])

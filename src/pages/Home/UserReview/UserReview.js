@@ -8,7 +8,7 @@ const UserReview = () => {
     const [review, setReview] = useState([])
 
     useEffect(() => {
-        fetch('https://arcane-anchorage-85397.herokuapp.com/feedback')
+        fetch('https://waterloo-server-rabi-mezan.vercel.app/feedback')
             .then(res => res.json())
             .then(data => setReview(data))
     }, [])

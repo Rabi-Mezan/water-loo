@@ -9,7 +9,7 @@ const Mybooking = () => {
     const history = useHistory()
 
     useEffect(() => {
-        fetch(`https://arcane-anchorage-85397.herokuapp.com/mybooking/${user?.email}`)
+        fetch(`https://waterloo-server-rabi-mezan.vercel.app/mybooking/${user?.email}`)
             .then(res => res.json())
             .then(result => {
                 console.log(result);
@@ -20,7 +20,7 @@ const Mybooking = () => {
     const handleCancel = id => {
         const procedd = window.confirm('Are you sure to cancel the order??')
         if (procedd) {
-            fetch(`https://arcane-anchorage-85397.herokuapp.com/mybooking/${id}`, {
+            fetch(`https://waterloo-server-rabi-mezan.vercel.app/mybooking/${id}`, {
                 method: 'DELETE',
                 headers: {
                     "content-type": "application/json"

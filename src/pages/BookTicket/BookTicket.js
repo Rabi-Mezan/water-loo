@@ -15,7 +15,7 @@ const BookTicket = () => {
         data.pack = pack;
         data.status = 'pending'
         // console.log(data);
-        fetch('https://arcane-anchorage-85397.herokuapp.com/bookTicket', {
+        fetch('https://waterloo-server-rabi-mezan.vercel.app/bookTicket', {
             method: "POST",
             headers: { "content-type": "application/json" },
             body: JSON.stringify(data)
@@ -33,7 +33,7 @@ const BookTicket = () => {
 
 
     useEffect(() => {
-        fetch(`https://arcane-anchorage-85397.herokuapp.com/details/${id}`)
+        fetch(`https://waterloo-server-rabi-mezan.vercel.app/details/${id}`)
             .then(res => res.json())
             .then(data => setPack(data))
     }, [])
