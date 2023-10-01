@@ -5,7 +5,7 @@ const ManageBooking = () => {
     const [control, setControl] = useState(false)
 
     useEffect(() => {
-        fetch('https://arcane-anchorage-85397.herokuapp.com/booking')
+        fetch('https://waterloo-server-rabi-mezan.vercel.app/booking')
             .then(res => res.json())
             .then(data => {
                 setAllbooing(data)
@@ -17,7 +17,7 @@ const ManageBooking = () => {
     const handleCancel = id => {
         const procedd = window.confirm('Are you sure to cancel the order??')
         if (procedd) {
-            fetch(`https://arcane-anchorage-85397.herokuapp.com/mybooking/${id}`, {
+            fetch(`https://waterloo-server-rabi-mezan.vercel.app/mybooking/${id}`, {
                 method: 'DELETE',
                 headers: {
                     "content-type": "application/json"
@@ -41,7 +41,7 @@ const ManageBooking = () => {
 
     //approved ticket booking by admin 
     const handleUpdate = id => {
-        fetch(`https://arcane-anchorage-85397.herokuapp.com/booking/${id}`, {
+        fetch(`https://waterloo-server-rabi-mezan.vercel.app/booking/${id}`, {
             method: "PUT",
             headers: {
                 "content-type": "application/json"

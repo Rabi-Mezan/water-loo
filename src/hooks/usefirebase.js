@@ -81,7 +81,7 @@ const useFirebase = () => {
     //save user
     const saveUser = (email, displayName) => {
         const user = { email, displayName };
-        fetch('https://arcane-anchorage-85397.herokuapp.com/users', {
+        fetch('https://waterloo-server-rabi-mezan.vercel.app/users', {
             method: "POST",
             headers: {
                 'content-type': 'application/json'
@@ -94,7 +94,7 @@ const useFirebase = () => {
 
     // cheking admin or not
     useEffect(() => {
-        fetch(`https://arcane-anchorage-85397.herokuapp.com/users/${user?.email}`)
+        fetch(`https://waterloo-server-rabi-mezan.vercel.app/users/${user?.email}`)
             .then(res => res.json())
             .then(data => setAdmin(data.admin))
     }, [user?.email])

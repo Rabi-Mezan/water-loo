@@ -18,7 +18,7 @@ const Feedback = () => {
         console.log(feedbackdata.email, feedbackdata.feedbacktext);
         // var frm = document.getElementsById('feedbackForm');
 
-        fetch('https://arcane-anchorage-85397.herokuapp.com/feedback', {
+        fetch('https://waterloo-server-rabi-mezan.vercel.app/feedback', {
             method: "POST",
             headers: {
                 "content-type": "application/json"

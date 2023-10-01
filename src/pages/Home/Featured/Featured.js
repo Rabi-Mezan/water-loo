@@ -11,7 +11,11 @@ const Featured = () => {
 
 
     useEffect(() => {
+<<<<<<< HEAD
         fetch('http://localhost:5000/packages')
+=======
+        fetch('https://waterloo-server-rabi-mezan.vercel.app/packages')
+>>>>>>> ae7d6c984493cc4735f1451b09d39865d1beb9c2
             .then(res => res.json())
             .then(data => setattrActions(data))
     }, [])
