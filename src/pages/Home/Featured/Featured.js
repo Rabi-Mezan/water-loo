@@ -11,7 +11,7 @@ const Featured = () => {
 
 
     useEffect(() => {
-        fetch('https://arcane-anchorage-85397.herokuapp.com/packages')
+        fetch('http://localhost:5000/packages')
             .then(res => res.json())
             .then(data => setattrActions(data))
     }, [])

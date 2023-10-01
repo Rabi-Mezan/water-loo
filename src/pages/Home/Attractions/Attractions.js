@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 
 const Attractions = () => {
     return (
-        <div>
+        <div className=''>
 
 
             <div class="flex bg-gray-100 justify-center items-center pt-14">

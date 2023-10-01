@@ -87,7 +87,7 @@ const Login = () => {
                                 <div class="mt-4">
                                     <div class="flex justify-between">
                                         <label class="block text-gray-700 text-sm font-bold mb-2">Password</label>
-                                        <a href="/" class="text-xs text-gray-500">Forget Password?</a>
+                                        {/* <a href="/" class="text-xs text-gray-500">Forget Password?</a> */}
                                     </div>
                                     <input
                                         name='password'

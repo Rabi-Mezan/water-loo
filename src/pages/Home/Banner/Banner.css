@@ -1,36 +1,41 @@
 @import url('https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600,700,800,900&display=swap');
-*
-{
+
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&family=Lilita+One&family=Righteous&display=swap');
+
+
+
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: 'Poppins', sans-serif;
+  font-family: 'Poppins', cursive;
 }
-header
-{
+
+header {
+  display: none;
   position: absolute;
   top: 0;
   left: 0;
   width: 100%;
   padding: 40px 100px;
   z-index: 1000;
-  display: flex;
+  /* display: flex;
   justify-content: space-between;
-  align-items: center;
+  align-items: center; */
 }
-header .logo
-{
+
+header .logo {
   color: #fff;
   text-transform: uppercase;
   cursor: pointer;
 }
 
-.banner
-{
+.banner {
   position: relative;
+  top: 10;
   left: 0;
   width: 100%;
-  
+
   padding: 100px;
   display: flex;
   justify-content: space-between;
@@ -40,49 +45,47 @@ header .logo
   z-index: 2;
 }
 
-.overlay
-{
+.overlay {
   position: absolute;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
- 
-  
+
+
 }
-.text
-{
+
+.text {
   position: relative;
   z-index: 10;
   left: 0;
 }
 
-.text h2
-{
-  font-size: 5em;
+.text h2 {
+  font-size: 3em;
   font-weight: 800;
   color: #fff;
   line-height: 1em;
   text-transform: uppercase;
 }
-.text h3
-{
+
+.text h3 {
   font-size: 4em;
   font-weight: 700;
   color: #fff;
   line-height: 1em;
   text-transform: uppercase;
 }
-.text p
-{
-  font-size: 1.1em;
+
+.text p {
+  font-size: 1em;
   color: #fff;
   margin: 20px 0;
   font-weight: 400;
   max-width: 700px;
 }
-.text a
-{
+
+.text a {
   display: inline-block;
   font-size: 1em;
   background: #fff;
@@ -95,50 +98,53 @@ header .logo
   letter-spacing: 2px;
   transition: 0.2s;
 }
-.text a:hover
-{
+
+.text a:hover {
   letter-spacing: 6px;
 }
-.social
-{
-  position: absolute;
+
+.social {
+  position: relative;
   z-index: 10;
-  bottom: 20px;
+  bottom: 40px;
   display: flex;
   justify-content: center;
   align-items: center;
 }
-.social li
-{
+
+.social li {
   list-style: none;
 }
-.social li a
-{
+
+.social li a {
   display: inline-block;
   margin-right: 20px;
   filter: invert(1);
   transform: scale(0.5);
   transition: 0.5s;
 }
-.social li a:hover
-{
+
+.social li a:hover {
   transform: scale(0.5) translateY(-15px);
 }
 
 
-@media (max-width: 991px)
-{
+@media (max-width: 991px) {
+
   .banner,
-  .banner header
-  {
+  .banner header {
     padding: 40px;
   }
-  .text h2
-  {
-    font-size: 3em;
-  }
-  .text h3
-  {
+
+  .text h2 {
     font-size: 2em;
+  }
+
+  .text h3 {
+    font-size: 2em;
+  }
+
+  .social {
+    display: none;
   }
 }

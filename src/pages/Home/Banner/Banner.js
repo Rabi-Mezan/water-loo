@@ -12,12 +12,12 @@ const Banner = () => {
             style={{
                 backgroundImage: 'url(' + bgimage + ')',
                 backgroundSize: "cover",
-                height: "105vh",
+                height: "100vh",
                 width: "100vw",
 
 
             }}
-            class="banner paralax"
+            class="banner "
         >
             <section
                 className=''
@@ -31,14 +31,14 @@ const Banner = () => {
                     className=' img-fluid'></div>
                 <div class="overlay"></div>
                 <div class="text">
-                    <h2>Never Stop To </h2>
+                    <h2 className='text-xl'>Never Stop </h2>
                     <h3>Exploring The World</h3>
                     <p>100% Authentic Tickets. Dedicated Customer Support. e-Ticket Delivery. Children's Charities Sponsor.
 
                         A Trusted Seller of Discounted Attraction Tickets & Vacation Packages.</p>
                     <Link to="/packages">Explore</Link>
                 </div>
-                <ul class="social">
+                <ul class="social md:hidden">
                     <li><a href="/">
                         <img src="https://i.ibb.co/x7P24fL/facebook.png" alt='' /></a></li>
                     <li><a href="/">

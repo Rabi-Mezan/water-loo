@@ -6,11 +6,8 @@ const Speciality = () => {
     return (
         <div>
             <div
-                data-aos="zoom-in-down"
-                data-aos-delay="50"
-                data-aos-duration="1000"
-                data-aos-anchor-placement="top-center"
-                class="flex  justify-center items-center  pt-8 my-10">
+
+                class="flex  justify-center items-center  pt-8 my-10 ">
 
                 <div class="2xl:mx-auto 2xl:container lg:px-20 lg:py-16 md:py-12 md:px-6 py-9 px-4 w-96 sm:w-auto">
                     <div role="main" class="flex flex-col items-center justify-center">
@@ -20,38 +17,33 @@ const Speciality = () => {
                 </div>
             </div>
 
-            <div class="grid lg:grid-cols-2 gap-6 px-2 justify-center items-start">
-                <div
-                    data-aos="zoom-in-right"
-                    data-aos-delay="50"
-                    data-aos-duration="1000"
-                    data-aos-anchor-placement="top-center"
+            <div class="grid lg:grid-cols-1  mx-20 gap-6 px-2 justify-center items-center">
 
-                >
+                <div>
                     <div class="lg:grid lg:grid-cols-2 gap-3 justify-center">
 
-                        <div className='text-center lg:mb-0 mb-10    bg-gray-500 text-white p-8'>
+                        <div className='text-center lg:mb-0 mb-10    bg-gray-800 text-white p-16'>
 
                             <i class="fas fa-house-user font-bold text-5xl"></i>
                             <h3 className='font-bold text-2xl my-3'>Private Gazebo</h3>
-                            <p className=' mx-auto text-sm'>Lorem ipsum dolor sit amet, consectetur adipisicing </p>
+                            <p className=' mx-auto text-sm'>Showcase your park's exhilarating water slides, including any record-breaking or one-of-a-kind attractions. </p>
                         </div>
 
-                        <div className='text-center  lg:mb-0 mb-10   bg-gray-600 text-white p-8'>
+                        <div className='text-center  lg:mb-0 mb-10   bg-gray-800 text-white p-16'>
 
                             <i class="fas fa-utensils font-bold text-5xl"></i>
                             <h3 className='font-bold text-2xl my-3'>Delicious Food</h3>
-                            <p className=' mx-auto text-sm'>Lorem ipsum dolor sit amet, consectetur adipisicing </p>
+                            <p className=' mx-auto text-sm'>Showcase your park's exhilarating water slides, including any record-breaking or one-of-a-kind attractions. </p>
                         </div>
 
-                        <div className='text-center  lg:mb-0 mb-10   bg-gray-700 text-white p-8'>
+                        <div className='text-center  lg:mb-0 mb-10   bg-gray-800 text-white p-16'>
 
                             <i class="fas fa-user-lock font-bold text-5xl"></i>
                             <h3 className='font-bold text-2xl my-3'>Safety Lockers</h3>
-                            <p className=' mx-auto text-sm'>Lorem ipsum dolor sit amet, consectetur adipisicing </p>
+                            <p className=' mx-auto text-sm'>Showcase your park's exhilarating water slides, including any record-breaking or one-of-a-kind attractions. </p>
                         </div>
 
-                        <div className='text-center drop-shadow-md bg-gray-800 text-white p-8'>
+                        <div className='text-center drop-shadow-md bg-gray-800 text-white p-16'>
 
                             <i class="fas fa-swimming-pool font-bold text-5xl"></i>
                             <h3 className='font-bold text-2xl my-3'>Pool Rides</h3>
@@ -82,14 +74,7 @@ const Speciality = () => {
                 </div>
 
 
-                <div
-                    data-aos="zoom-in-left"
-                    data-aos-delay="50"
-                    data-aos-duration="1000"
-                    data-aos-anchor-placement="top-center"
-                    class="">
-                    <img src="https://i.ibb.co/hVhzTXH/lily-banse-p-SUBKIUSEAk-unsplash.jpg" alt="" />
-                </div>
+
 
             </div>
         </div>
