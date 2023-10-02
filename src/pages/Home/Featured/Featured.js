@@ -12,7 +12,7 @@ const Featured = () => {
 
     useEffect(() => {
 
-        fetch('https://waterloo-server.vercel.app/packages')
+        fetch('https://waterloo-server-rabi-mezan.vercel.app/packages')
 
             .then(res => res.json())
             .then(data => setattrActions(data))
