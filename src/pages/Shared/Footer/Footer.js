@@ -9,7 +9,7 @@ const Footer = () => {
     };
     return (
         <div>
-            <div className='mt-24 h-auto py-5 lg:flex flex-col lg:items-strech  lg:justify-center  dark:bg-gray-800  px-4 lg:pt-20'>
+            <div className='mt-0 h-auto py-5 lg:flex flex-col lg:items-strech  lg:justify-center  dark:bg-gray-800  px-4 lg:pt-20'>
                 <div className='my-6 lg:flex justify-between items-center'>
                     <Link to="/" class="lg:visible lg:text-4xl font-bold text-yellow-400 dark:hover:text-gray-200 hover:border-blue-500 mb-10 lg:ml-14 lg:px-0 px-6">WATERLOO</Link>
                     <div className='lg:w-1/5 lg:text-2xl text-white flex justify-around items-start flex-col lg:px-0 px-6 my-5'>

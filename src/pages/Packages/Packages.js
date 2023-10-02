@@ -44,7 +44,7 @@ const Packages = () => {
                 ))}
             </Slider>
 
-            <div class="flex flex-col items-center my-12 p-6 lg:p-0 justify-center">
+            <div class="flex flex-col items-center my-40 p-6 lg:p-0 justify-center">
                 <h1 class="lg:text-4xl text-xl font-bold leading-9 text-center text-black uppercase">FIND ALL OUR  ATTRACTIONS</h1>
                 <p class="lg:text-base text-xs leading-normal text-center text-gray-600 dark:text-gray mt-4 lg:w-2/3 md:w-10/12 w-full">For nearly one hundred years, Knott's Berry Farm has been drawing fans from all over. What started as a small family farm soon grew into a world famous destination.</p>
             </div>

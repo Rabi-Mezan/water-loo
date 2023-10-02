@@ -17,7 +17,7 @@ const Speciality = () => {
                 </div>
             </div>
 
-            <div class="grid lg:grid-cols-1  mx-20 gap-6 px-2 justify-center items-center">
+            <div class="grid lg:grid-cols-1  lg:mx-20 gap-6 px-2 justify-center items-center">
 
                 <div>
                     <div class="lg:grid lg:grid-cols-2 gap-3 justify-center">
@@ -26,33 +26,33 @@ const Speciality = () => {
 
                             <i class="fas fa-house-user font-bold text-5xl"></i>
                             <h3 className='font-bold text-2xl my-3'>Private Gazebo</h3>
-                            <p className=' mx-auto text-sm'>Showcase your park's exhilarating water slides, including any record-breaking or one-of-a-kind attractions. </p>
+                            <p className=' mx-auto text-sm font-light'>Showcase your park's exhilarating water slides, including any record-breaking or one-of-a-kind attractions. </p>
                         </div>
 
                         <div className='text-center  lg:mb-0 mb-10   bg-gray-800 text-white p-16'>
 
                             <i class="fas fa-utensils font-bold text-5xl"></i>
                             <h3 className='font-bold text-2xl my-3'>Delicious Food</h3>
-                            <p className=' mx-auto text-sm'>Showcase your park's exhilarating water slides, including any record-breaking or one-of-a-kind attractions. </p>
+                            <p className=' mx-auto text-sm font-light'>Showcase your park's exhilarating water slides, including any record-breaking or one-of-a-kind attractions. </p>
                         </div>
 
                         <div className='text-center  lg:mb-0 mb-10   bg-gray-800 text-white p-16'>
 
                             <i class="fas fa-user-lock font-bold text-5xl"></i>
                             <h3 className='font-bold text-2xl my-3'>Safety Lockers</h3>
-                            <p className=' mx-auto text-sm'>Showcase your park's exhilarating water slides, including any record-breaking or one-of-a-kind attractions. </p>
+                            <p className=' mx-auto text-sm font-light'>Showcase your park's exhilarating water slides, including any record-breaking or one-of-a-kind attractions. </p>
                         </div>
 
                         <div className='text-center drop-shadow-md bg-gray-800 text-white p-16'>
 
                             <i class="fas fa-swimming-pool font-bold text-5xl"></i>
                             <h3 className='font-bold text-2xl my-3'>Pool Rides</h3>
-                            <p className=' mx-auto text-sm'>Lorem ipsum dolor sit amet, consectetur adipisicing </p>
+                            <p className=' mx-auto text-sm font-light'>Showcase your park's exhilarating water slides, including any record-breaking or one-of-a-kind attractions. </p>
                         </div>
 
                         <div className='py-14 col-span-2 px-4   items-bottom font-light mt-10'>
                             <div className='text-xl'>
-                                <p className='lg:flex text-2xl font-light my-5 uppercase lg:justify-between '>Our Schedule</p>
+                                <p className='lg:flex text-3xl font-bold my-5 uppercase lg:justify-between '>Our Schedule</p>
                             </div>
                             <div className='lg:text-xl'>
                                 <p className='flex justify-between '>Mon - Fri <span className='lg:font-semibold'><i class="fas fa-clock mr-2 text-blue-300"></i>08:00 AM - 16:00 PM</span></p>

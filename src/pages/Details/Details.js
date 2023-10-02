@@ -27,7 +27,7 @@ const Details = () => {
 
             </div> */}
 
-            <div class="2xl:mx-auto 2xl:container mx-4 py-16">
+            <div class="2xl:mx-auto  py-20">
                 <div class="w-full relative flex items-center justify-center">
                     <img className='' src={pack.img} alt="" class="w-full h-full absolute z-0  xl:block" />
                     <div class="bg-gray-800 bg-opacity-60 hover:opacity-90 md:my-16 lg:py-16 py-10 w-full md:mx-24 md:px-12 px-4 flex flex-col items-center justify-center relative z-40">

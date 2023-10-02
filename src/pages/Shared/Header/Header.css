@@ -75,7 +75,7 @@ button.learn-more .button-text {
 }
 
 button:hover .circle {
-    width: 100%;
+    width: 90%;
 }
 
 button:hover .circle .icon.arrow {
